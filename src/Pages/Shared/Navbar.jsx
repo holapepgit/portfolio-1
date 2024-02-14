@@ -1,5 +1,45 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
-  return <div></div>;
+  return (
+    <nav className="flex justify-between px-12  h-16 items-center border-b sticky-nav bg-primary bg-opacity-60">
+      <img
+        className="h-12 w-12 rounded-full"
+        src="https://github.com/shadcn.png"
+        alt=""
+      />
+      <ul className="flex text-gray-100 items-center gap-5 font-medium text-md">
+        {navOptions.map((option, index) => (
+          <li key={index}>
+            <Link to={option.path}>{option.name}</Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 };
+
+const navOptions = [
+  {
+    name: "Home",
+    path: "/",
+  },
+  {
+    name: "About",
+    path: "/about",
+  },
+  {
+    name: "Contact",
+    path: "/contact",
+  },
+  {
+    name: "Projects",
+    path: "/projects",
+  },
+  {
+    name: "Blog",
+    path: "/blog",
+  },
+];
 
 export default Navbar;
