@@ -1,6 +1,6 @@
 const Timeline = () => {
   return (
-    <section className="text-gray-200">
+    <section className="text-gray-200 py-12">
       <div className="mx-auto text-center">
         <h2 className="text-3xl font-bold mb-2">Timeline</h2>
         <div className="mx-auto w-24 h-1 mb-5 bg-secondary"></div>

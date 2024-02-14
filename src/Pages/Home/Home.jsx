@@ -1,4 +1,4 @@
-import Navbar from "../Shared/Navbar";
+import AboutMe from "./AboutMe";
 import Banner from "./Banner";
 import ContactMe from "./ContactMe";
 import Timeline from "./Timeline";
@@ -6,8 +6,8 @@ import Timeline from "./Timeline";
 const Home = () => {
   return (
     <div className="bg-primary">
-      <Navbar />
       <Banner />
+      <AboutMe/>
       <Timeline />
       <ContactMe />
     </div>
