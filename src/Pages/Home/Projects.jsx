@@ -10,15 +10,17 @@ const Projects = () => {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
-  return (
+    return (
+      <div className="bg-white">
+            
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 py-20 max-w-6xl mx-auto gap-20">
       {projectData.map((project, index) => (
-        <div
+          <div
           key={index}
-          className="w-full max-w-xl overflow-hidden bg-white rounded-lg shadow-lg"
+          className="w-full max-w-xl overflow-hidden bg-gray-100 rounded-lg shadow-lg"
         >
           <img
-            className="object-cover w-full h-56"
+            className="object-cover w-full h-72"
             src={project.image}
             alt="project avatar"
           />
@@ -29,6 +31,7 @@ const Projects = () => {
         </div>
       ))}
     </div>
+          </div>
   );
 };
 
