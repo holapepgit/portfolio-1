@@ -1,18 +1,18 @@
 const AboutMe = () => {
   return (
     <>
-      <div className="container px-6 py-16 mx-auto">
-        <div className="items-center flex justify-evenly">
-          <div className="flex items-center justify-center w-full mt-6 lg:mt-0  shadow-xl lg:border-4 border-black lg:w-[300px] lg:h-[400px]">
+      <div className="container px-6 py-16 mx-auto bg-white">
+        <div className="items-center lg:flex justify-evenly">
+          <div className="flex items-center justify-center w-full mt-6 lg:mt-0  lg:shadow-xl lg:border-4 lg:border-black lg:w-[300px] lg:h-[400px]">
             <img
-              className="w-[300px] h-[400px] object-cover lg:max-w-3xl rounded-lg lg:px-8 bg-gray-800  border-red-500 mb-14 ml-14"
+              className="w-[300px] h-[400px] object-cover lg:max-w-3xl rounded-lg lg:px-8 bg-gray-800  border-red-500 lg:mb-14 lg:ml-14"
               src="https://i.ibb.co/XF1rVcX/423062906-8151874321506327-212631828011859121-n.jpg"
               alt="Catalogue-pana.svg"
             />
           </div>
           <div className="w-full lg:w-1/2">
             <div className="lg:max-w-lg">
-              <h1 className="text-3xl font-semibold lg:text-5xl pb-8">
+              <h1 className="text-3xl font-semibold lg:text-5xl pb-8 pt-4">
                 About
               </h1>
 

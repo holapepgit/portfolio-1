@@ -1,0 +1,32 @@
+[
+  {
+    "image": "https://i.ibb.co/VYbNGN4/423105998-1425268231408255-2859839885777595240-n.jpg",
+    "name": "John Smith",
+    "description": "John is a passionate software engineer with a knack for problem-solving. He loves to explore new technologies and is always eager to learn."
+  },
+  {
+    "image": "https://i.ibb.co/9qgwBbc/423221568-7601812879852064-6307610390278199723-n.jpg",
+    "name": "Emily Johnson",
+    "description": "Emily is a creative artist who enjoys painting and sculpting. She finds inspiration in nature and loves to experiment with different mediums."
+  },
+  {
+    "image": "https://i.ibb.co/HnkRs3r/423619422-246106461799882-4475250524255776070-n.jpg",
+    "name": "David Brown",
+    "description": "David is a dedicated teacher who is committed to making learning fun and engaging for his students. He believes in the power of education to transform lives."
+  },
+  {
+    "image": "https://i.ibb.co/y6kLcqs/422985119-1088413529074151-2639272917919387996-n.jpg",
+    "name": "Sarah Miller",
+    "description": "Sarah is an avid traveler who has a passion for exploring new cultures and cuisines. She enjoys documenting her adventures through photography and writing."
+  },
+  {
+    "image": "https://i.ibb.co/XLq7DLr/422913501-585066360505027-3513557962592483288-n.jpg",
+    "name": "Michael Wilson",
+    "description": "Michael is a fitness enthusiast who believes in leading a healthy and active lifestyle. He enjoys weightlifting, running, and hiking in his free time."
+  },
+  {
+    "image": "https://i.ibb.co/GnDsQyF/423738022-6954326861359964-2887240513822081644-n.jpg",
+    "name": "Jessica Taylor",
+    "description": "Jessica is a marketing professional with a creative flair. She specializes in digital marketing strategies and enjoys finding innovative ways to reach target audiences."
+  }
+]
