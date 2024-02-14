@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between px-12  h-16 items-center border-b sticky-nav bg-primary bg-opacity-60">
+    <nav className="flex justify-between px-12  h-16 items-center  sticky-nav bg-primary bg-opacity-60">
       <img
         className="h-12 w-12 rounded-full"
         src="https://github.com/shadcn.png"
