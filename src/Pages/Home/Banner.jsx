@@ -10,7 +10,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
   return (
-    <div className=" px-4 sm:px-6 py-8 md:py-16 mx-auto bg-primary text-white">
+    <div className="  px-4 sm:px-6 py-8 md:py-16 mx-auto bg-primary text-white">
       <div className="flex flex-col-reverse justify-evenly lg:flex-row items-center">
         <div className="lg:w-1/2 lg:pr-8">
           <div className="lg:max-w-lg pl-8">
@@ -28,7 +28,7 @@ const Banner = () => {
 
             <p className="mt-3 k font-semibold text-2xl">Contact Me</p>
 
-            <div className="text-3xl space-x-10 flex  mt-4   py-4">
+            <div className="text-3xl space-x-8 flex  mt-4   py-2">
               <a href="" className="k">
                 <FaFacebook />
               </a>
@@ -48,7 +48,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center w-auto mt-6 lg:mt-0 shadow-xl border-4 rounded-md border-secondary  lg:w-[400px] lg:h-[400px]">
+        <div className="flex items-center justify-center w-auto mt-6 lg:mt-0 shadow-xl lg:border-4 rounded-md border-secondary  lg:w-[400px] lg:h-[400px] mb-5 lg:mb-0">
           <img
             className="w-60 h-60 max-w-md lg:max-w-none lg:w-[400px] lg:h-[400px] lg:rounded-xl md:rounded-2xl object-cover lg:px-8 bg-gray-800 lg:mr-8 lg:mb-10 lg:-ml-4"
             src="https://i.ibb.co/4M6Yjgj/377149425-896894145363927-5352944729973752699-n-1.jpg"
