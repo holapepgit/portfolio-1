@@ -5,7 +5,7 @@ import Timeline from "./Timeline";
 
 const Home = () => {
   return (
-    <div className="bg-primary">
+    <div>
       <Navbar />
       <Banner />
       <Timeline />

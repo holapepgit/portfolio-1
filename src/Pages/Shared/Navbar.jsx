@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex justify-between px-12  h-16 items-center  sticky top-0 z-50 backdrop-blur-md     transition-all ${
+      className={`flex justify-between px-3 lg:px-12  h-16 items-center  sticky top-0 z-50 backdrop-blur-md     transition-all ${
         scrolling ? "bg-[#1e1a20]/50" : " "
       }`}>
       <img
