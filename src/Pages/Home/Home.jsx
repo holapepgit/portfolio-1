@@ -1,6 +1,7 @@
 import AboutMe from "./AboutMe";
 import Banner from "./Banner";
 import ContactMe from "./ContactMe";
+import Projects from "./Projects";
 import Timeline from "./Timeline";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <Banner />
       <AboutMe/>
       <Timeline />
+      <Projects/>
       <ContactMe />
     </div>
   );
