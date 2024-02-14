@@ -7,6 +7,7 @@ import Home from "./Pages/Home/Home";
 
 import "./styles/global.css";
 import Banner from "./Pages/Home/Banner";
+import AboutMe from "./Pages/Home/AboutMe";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/banner",
         element: <Banner/>,
+      },
+      {
+        path: "/about",
+        element: <AboutMe/>,
       },
     ],
   },
