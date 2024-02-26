@@ -9,7 +9,12 @@ const Home = () => {
       <Banner />
       <AboutMe />
       <Timeline />
+<<<<<<< HEAD
       <Projects />
+=======
+      <Projects/>
+      <ContactMe />
+>>>>>>> 5752b259ba9f6b23100f41397f4bc55c7e8f1010
     </div>
   );
 };
