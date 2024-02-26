@@ -1,15 +1,16 @@
-import React, { useRef } from "react";
-import EmailLottie from "./EmailLottie";
+import { useRef } from "react";
+import EmailLottie from "../../../components/EmailLottie";
 import emailjs from "@emailjs/browser";
-import { styles } from "../style";
-import { toast } from "react-hot-toast";
+import { toast } from "sonner";
 const Contact = () => {
-  const [isLoading, setIsLoading] = React.useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
-    setIsLoading(true);
     e.preventDefault();
+
+    toast.loading("Sending Message", {
+      duration: 2000,
+    });
 
     emailjs
       .sendForm(
@@ -20,27 +21,32 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          toast.success("Message Sent Successfully");
+          toast.success("Message Sent Successfully", {
+            duration: 2000,
+          });
+
           console.log(result.text);
-          setIsLoading(false);
+
           form.current.reset();
         },
         (error) => {
-          toast.error("Message Sent Failed");
+          toast.error("Error Sending Message", {
+            duration: 2000,
+          });
+
           console.log(error.text);
-          setIsLoading(false);
         }
       );
   };
   return (
     <>
-      <h1 id="contact" className={`${styles.sectionSubText}`}>
-        Way For
-      </h1>
-      <h1 className={`${styles.sectionHeadText}`}>Contact</h1>
+      <div className="lg:mx-auto text-center  ">
+        <h2 className="text-3xl font-bold mb-2 text-gray-200">Contact Me</h2>
+        <div className="mx-auto w-24 h-1 mb-5 bg-secondary"></div>
+      </div>
       <div className="container gap-4   mx-auto flex items-center justify-between lg:flex-row flex-col-reverse">
         <div className="mt-5 lg:mt-0 lg:w-2/3 w-full ">
-          <div className="w-full px-8 py-8 mx-auto overflow-hidden   rounded-lg shadow-2xl     backdrop-blur-sm  ">
+          <div className="w-full px-8 py-8 mx-auto overflow-hidden   rounded-lg backdrop-blur-sm  ">
             <form ref={form} onSubmit={sendEmail} className="mt-6">
               <div className="flex-1">
                 <label className="block mb-2 text-sm      text-gray-200">
@@ -76,12 +82,11 @@ const Contact = () => {
                   className="block w-full h-32 px-5 py-3 mt-2      border   rounded-md md:h-48   placeholder-gray-600   bg-gray-900   text-gray-300   border-gray-700    focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                   placeholder="Message"></textarea>
               </div>
-              <button type="submit" role="button">
-                {isLoading ? (
-                  <span className="w-6 h-6 border-2 block mx-auto rounded-full border-dashed animate-spin"></span>
-                ) : (
-                  "Send Message"
-                )}
+              <button
+                type="submit"
+                role="button"
+                className=" mt-5 bg-black/50  text-gray-300 border px-2 py-2 rounded border-gray-300">
+                Send Message
               </button>
             </form>
           </div>
