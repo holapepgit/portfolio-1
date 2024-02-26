@@ -40,13 +40,13 @@ const Contact = () => {
   };
   return (
     <>
-      <div id="contact" className="lg:mx-auto text-center  py-5">
+      <div id="contact" className="lg:mx-auto text-center  py-5  ">
         <h2 className="text-3xl font-bold mb-2 text-gray-200">Contact Me</h2>
         <div className="mx-auto w-24 h-1 mb-5 bg-secondary"></div>
       </div>
-      <div className="container gap-4   mx-auto flex items-center justify-between lg:flex-row flex-col-reverse">
+      <div className="container gap-4    mx-auto flex items-center justify-between lg:flex-row flex-col-reverse">
         <div className="mt-5 lg:mt-0 lg:w-2/3 w-full ">
-          <div className="w-full px-8 py-8 mx-auto overflow-hidden   rounded-lg backdrop-blur-sm  ">
+          <div className="w-full px-8 py-8 mx-auto overflow-hidden   rounded-lg backdrop-blur-sm shadow-2xl  ">
             <form ref={form} onSubmit={sendEmail} className="mt-6">
               <div className="flex-1">
                 <label className="block mb-2 text-sm      text-gray-200">
@@ -57,7 +57,7 @@ const Contact = () => {
                   name="from_name"
                   type="text"
                   placeholder="name"
-                  className="block w-full px-5 py-3 mt-2      border   rounded-md   placeholder-gray-600   bg-gray-900   text-gray-300   border-gray-700    focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                  className="block w-full px-5 py-3 mt-2      border   rounded-md   placeholder-gray-400   bg-transparent   text-gray-300   border-gray-600    focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                 />
               </div>
               <div className="flex-1 mt-6">
@@ -69,7 +69,7 @@ const Contact = () => {
                   type="email"
                   name="from_email"
                   placeholder="name@example.com"
-                  className="block w-full px-5 py-3 mt-2      border   rounded-md   placeholder-gray-600   bg-gray-900   text-gray-300   border-gray-700     focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                  className="block w-full px-5 py-3 mt-2      border   rounded-md   placeholder-gray-400   bg-transparent   text-gray-300   border-gray-600     focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                 />
               </div>
               <div className="w-full mt-6">
@@ -79,7 +79,7 @@ const Contact = () => {
                 <textarea
                   required
                   name="message"
-                  className="block w-full h-32 px-5 py-3 mt-2      border   rounded-md md:h-48   placeholder-gray-600   bg-gray-900   text-gray-300   border-gray-700    focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                  className="block w-full h-32 px-5 py-3 mt-2      border   rounded-md md:h-48   placeholder-gray-400   bg-transparent   text-gray-300   border-gray-600    focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                   placeholder="Message"></textarea>
               </div>
               <button
