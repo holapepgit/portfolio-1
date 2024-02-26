@@ -24,8 +24,7 @@ const Navbar = () => {
     <nav
       className={`flex justify-between px-12  h-16 items-center  sticky top-0 z-50 backdrop-blur-md     transition-all ${
         scrolling ? "bg-[#1e1a20]/50" : "bg-[#1e1a20]"
-      }`}
-    >
+      }`}>
       <img
         className="h-12 w-12 rounded-full"
         src="https://github.com/shadcn.png"
