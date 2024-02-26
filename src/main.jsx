@@ -4,7 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./Layout/Main";
 import Home from "./Pages/Home/Home";
-
+import { Toaster } from "sonner";
 import "./styles/global.css";
 import Banner from "./Pages/Home/Banner";
 import AboutMe from "./Pages/Home/AboutMe";
@@ -20,11 +20,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/banner",
-        element: <Banner/>,
+        element: <Banner />,
       },
       {
         path: "/about",
-        element: <AboutMe/>,
+        element: <AboutMe />,
       },
     ],
   },
@@ -33,5 +33,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <Toaster />
   </React.StrictMode>
 );
