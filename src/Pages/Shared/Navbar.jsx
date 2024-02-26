@@ -9,9 +9,11 @@ const Navbar = () => {
         src="https://github.com/shadcn.png"
         alt=""
       />
-      <ul className="flex text-gray-100 items-center gap-5 font-medium text-md">
+      <ul className="flex  items-center gap-5 font-medium text-md">
         {navOptions.map((option, index) => (
-          <li key={index}>
+          <li
+            key={index}
+            className="text-gray-300 hover:text-white transition-all">
             <Link to={option.path}>{option.name}</Link>
           </li>
         ))}

@@ -24,7 +24,7 @@ const ProjectOverview = () => {
           </thead>
           <tbody>
             {tableData.map((data, index) => (
-              <tr key={index} className="border-b">
+              <tr key={index} className="border">
                 <td className="px-4 py-2 border">{data.name}</td>
                 <td className="px-4 py-2 border">{data.originCity}</td>
                 <td className="px-4 py-2 border">{data.destinationCity}</td>

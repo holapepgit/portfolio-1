@@ -16,17 +16,17 @@ const AboutMe = () => {
           </div>
           <div className="w-full lg:w-1/2">
             <div className="lg:max-w-lg">
-              <p className="pt-6 text-gray-700 ">
+              <p className="pt-6 text-gray-700  text-sm lg:text-base">
                 • The South East And South-South Nigeria are in strategic
                 locations in the Country.
               </p>
-              <p className="pt-6 text-gray-700 ">
+              <p className="pt-6 text-gray-700  text-sm lg:text-base">
                 The combined regions population is estimated to be 65M.
               </p>
-              <p className="pt-6 text-gray-700 ">
+              <p className="pt-6 text-gray-700  text-sm lg:text-base">
                 • Nigeria imports over 131 million tons of cargo each year.
               </p>
-              <p className="pt-6 text-gray-700 ">
+              <p className="pt-6 text-gray-700 text-sm lg:text-base ">
                 • It is estimated that the transregional corridor through this
                 rail project has the potential to transport 50 million-100
                 million tons of cargo each year.
