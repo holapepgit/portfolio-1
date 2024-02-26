@@ -40,7 +40,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="lg:mx-auto text-center  ">
+      <div id="contact" className="lg:mx-auto text-center  py-5">
         <h2 className="text-3xl font-bold mb-2 text-gray-200">Contact Me</h2>
         <div className="mx-auto w-24 h-1 mb-5 bg-secondary"></div>
       </div>

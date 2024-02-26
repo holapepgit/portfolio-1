@@ -5,13 +5,10 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
-import Contact from "../Home/Contact";
 
 const Footer = () => {
   return (
     <div className=" bg-primary py-4">
-      <Contact />
-
       <div className="text-2xl space-x-8 flex  text-white justify-center py-6">
         <a href="" className="k">
           <FaTwitter />
