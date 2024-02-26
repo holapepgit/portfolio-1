@@ -7,17 +7,17 @@ import Home from "./Pages/Home/Home";
 import { Toaster } from "sonner";
 import "./styles/global.css";
 import Banner from "./Pages/Home/Banner";
-import AboutMe from "./Pages/Home/AboutMe";
 import ProjectDetails from "./Pages/ProjectDetails/ProjectDetails";
+import ProjectOverview from "./Pages/Home/ProjectOverview";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main/>,
+    element: <Main />,
     children: [
       {
         path: "/",
-        element: <Home/>,
+        element: <Home />,
       },
       {
         path: "/banner",
@@ -25,11 +25,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <AboutMe />,
+        element: <ProjectOverview />,
       },
       {
         path: "/details",
-        element: <ProjectDetails/>,
+        element: <ProjectDetails />,
       },
     ],
   },

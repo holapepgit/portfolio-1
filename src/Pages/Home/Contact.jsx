@@ -39,12 +39,12 @@ const Contact = () => {
       );
   };
   return (
-    <>
+    <div className="bg-primary">
       <div id="contact" className="lg:mx-auto text-center  py-5  ">
         <h2 className="text-3xl font-bold mb-2 text-gray-200">Contact Me</h2>
         <div className="mx-auto w-24 h-1 mb-5 bg-secondary"></div>
       </div>
-      <div className="container gap-4    mx-auto flex items-center justify-between lg:flex-row flex-col-reverse">
+      <div className="container gap-4     mx-auto flex items-center justify-between lg:flex-row flex-col-reverse">
         <div className="mt-5 lg:mt-0 lg:w-2/3 w-full ">
           <div className="w-full px-8 py-8 mx-auto overflow-hidden   rounded-lg backdrop-blur-sm shadow-2xl  ">
             <form ref={form} onSubmit={sendEmail} className="mt-6">
@@ -94,7 +94,7 @@ const Contact = () => {
 
         <EmailLottie />
       </div>
-    </>
+    </div>
   );
 };
 
