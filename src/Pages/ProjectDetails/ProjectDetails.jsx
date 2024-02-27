@@ -2,7 +2,7 @@ import { GoNorthStar } from "react-icons/go";
 import icon from "../../assets/icon2.png";
 const ProjectDetails = () => {
   return (
-    <div className="bg-primary ">
+    <div className="bg-primary">
       <div className="flex justify-center  relative">
         <img
           className="object-cover w-full lg:h-[500px]  lg:w-full "

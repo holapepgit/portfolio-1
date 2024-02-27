@@ -4,7 +4,7 @@ const AboutMe = () => {
       <div id="background" className=" px-6 py-16 mx-auto bg-white">
         <div className="lg:mx-auto text-center">
           <h2 className="text-3xl font-bold mb-2">Background</h2>
-          <div className="mx-auto w-48 h-1 mb-5 bg-secondary"></div>
+          <div className="mx-auto w-28 h-1 mb-5 bg-secondary"></div>
         </div>
         <div className="items-center lg:flex justify-evenly">
           <div className="flex items-center justify-center w-full mt-6 lg:mt-0   lg:border-4 lg:border-black/70  rounded lg:w-[300px] lg:h-[400px]">

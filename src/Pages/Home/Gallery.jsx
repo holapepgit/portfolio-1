@@ -1,13 +1,8 @@
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import required modules
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 export default function Gallery() {
@@ -15,7 +10,7 @@ export default function Gallery() {
     <div className="py-5 bg-primary">
       <div className="lg:mx-auto text-center">
         <h2 className="text-3xl font-bold mb-2 text-white">Gallery</h2>
-        <div className="mx-auto w-28 h-1 mb-5 bg-secondary"></div>
+        <div className="mx-auto w-16 h-1 mb-5 bg-secondary"></div>
       </div>
       <Swiper
         effect={"coverflow"}
@@ -60,19 +55,33 @@ export default function Gallery() {
 
 const youtubeVideosLink = [
   {
-    image: "https://i.ibb.co/0Gm5rGn/9ecedc00-29ef-47a9-a467-48439b9de4f6.jpg",
-  },
-
-  {
-    image: "https://i.ibb.co/3R4GZDH/143e66f1-c32e-4b25-8eac-d2c45db6092c.jpg",
+    video: "https://www.youtube.com/embed/E85oM1URCZ0?si=CaIKkuDcd9_W03Nk",
   },
   {
-    video: "https://www.youtube.com/embed/xY2BjDp5qEs?si=CLYs0JgqkHqriJa6",
+    video: "https://www.youtube.com/embed/8M2tfT6vntA?si=QZtKUD-hyxcdz0Dk",
   },
   {
-    image: "https://i.ibb.co/6y8NkcQ/2a09306c-7e5c-4dc6-bea5-d036f91f5822.jpg",
+    video: "https://www.youtube.com/embed/Wet4AMgsIu0?si=wunZYKeVjK9Afz3k",
   },
   {
-    image: "https://i.ibb.co/WsYVNQ1/5f1d3684-a487-47d4-84e5-5441fa7620a6.jpg",
+    video: "https://www.youtube.com/embed/0oTjJBSssII?si=QJd_A1f558yhhcMM",
+  },
+  {
+    video: "https://www.youtube.com/embed/d9byjTHciUw?si=lxEOXINnw1z2trQG",
+  },
+  {
+    video: "https://www.youtube.com/embed/ZnAUcBM6QxE?si=sdBoJlJR9IQViIEV",
+  },
+  {
+    video: "https://www.youtube.com/embed/wVoYNXAU958?si=8PFfFNAeAdO1U9es",
+  },
+  {
+    video: "https://www.youtube.com/embed/k45eMdggg_8?si=ySMfraJDzO0XSkzq",
+  },
+  {
+    video: "https://www.youtube.com/embed/JouK9kfjzEw?si=JOGzKb-_p65ytDwS",
+  },
+  {
+    video: "https://www.youtube.com/embed/GJFreVM-ihQ?si=RRP1wrvCecFWeD2p",
   },
 ];

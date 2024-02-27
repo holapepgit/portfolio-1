@@ -32,7 +32,7 @@ const Navbar = () => {
         className={`${
           isOpen ? "left-0" : "-left-[600px]"
         }  w-2/3 lg:w-auto bg-black/90 lg:bg-transparent h-[100vh] lg:h-auto absolute  lg:sticky top-0  p-10 lg:p-0 transition-all duration-300 z-50`}>
-        <div className="flex flex-col z-20 lg:flex-row items-start lg:items-center gap-2 md:gap-5 ">
+        <div className="flex flex-col z-20 lg:flex-row items-start lg:items-center gap-2 md:gap-8 ">
           {navOptions.map((option, index) => (
             <Link
               key={index}
@@ -68,13 +68,9 @@ const navOptions = [
     path: "/",
   },
   {
-    name: "Projects",
+    name: "Project Details",
     path: "/projects",
   },
-  // {
-  //   name: "Blog",
-  //   path: "/blog",
-  // },
 ];
 
 export default Navbar;

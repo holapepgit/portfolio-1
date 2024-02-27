@@ -1,10 +1,7 @@
 import "aos/dist/aos.css";
 import {
-  FaDev,
-  FaFacebook,
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
+  FaPhone,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 
@@ -30,24 +27,14 @@ const Banner = () => {
                 repeat={3}
               />
             </h1>
+            <p className="  k font-semibold lg:text-2xl text-lg">Contact with Us</p>
 
-            <p className="  k font-semibold lg:text-2xl text-lg">Contact Me</p>
-
-            <div className="text-3xl lg:space-x-8 space-x-5 flex     py-2">
+            <div className=" lg:space-x-6 space-x-4 flex py-2 items-center">
               <a href="" className="k">
-                <FaFacebook />
+                <FaWhatsapp className="text-4xl"/>
               </a>
               <a href="" className="k">
-                <FaGithub />
-              </a>
-              <a href="" className="k">
-                <FaDev />
-              </a>
-              <a href="" className="k">
-                <FaLinkedin />
-              </a>
-              <a href="" className="k">
-                <FaTwitter />
+                <FaPhone  className="rotate-90 text-2xl"/>
               </a>
             </div>
           </div>
