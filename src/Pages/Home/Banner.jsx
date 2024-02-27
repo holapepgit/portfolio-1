@@ -10,25 +10,30 @@ import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
   return (
-    <div className="  px-4 sm:px-6 py-8 md:py-16 mx-auto bg-primary text-white">
-      <div className="flex flex-col-reverse justify-evenly lg:flex-row items-center">
-        <div className="lg:w-1/2 lg:pr-8">
-          <div className="lg:max-w-lg pl-8">
-            <h1 className="text-3xl lg:text-5xl font-bold mb-4">
-              I&apos;m Sajjad Emon
+    <div className="  px-4 sm:px-6 py-3 md:py-16 mx-auto bg-primary text-white ">
+      <div className="flex  flex-col-reverse justify-evenly lg:flex-row ">
+        <div className="lg:w-1/2 lg:pr-8 z-20">
+          <div className="pl-2  space-y-2">
+            <h1 className="text-3xl lg:text-5xl font-bold  ">
+              Regional Railway Network
             </h1>
-            <h1 className="text-3xl lg:text-5xl font-bold  pb-8">
+            <h1 className="text-3xl lg:text-5xl font-bold   ">
               <TypeAnimation
                 className="text-2xl text-secondary"
-                sequence={["I'm an Architecture", 2500]}
-                speed={1}
-                repeat={0}
+                sequence={[
+                  "Efficient Transportation",
+                  2000,
+                  "Streamlining Transportation",
+                  2000,
+                ]}
+                speed={10}
+                repeat={3}
               />
             </h1>
 
-            <p className="mt-3 k font-semibold text-2xl">Contact Me</p>
+            <p className="  k font-semibold lg:text-2xl text-xl">Contact Me</p>
 
-            <div className="text-3xl space-x-8 flex  mt-4   py-2">
+            <div className="text-3xl space-x-8 flex     py-2">
               <a href="" className="k">
                 <FaFacebook />
               </a>
@@ -48,14 +53,18 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center w-auto mt-6 lg:mt-0 shadow-xl lg:border-4 rounded-md border-secondary  lg:w-[400px] lg:h-[400px] mb-5 lg:mb-0">
+        <div className="flex items-center justify-center w-auto  lg:mt-0 shadow-xl lg:border-4 rounded-md border-secondary  lg:w-[400px] lg:h-[400px] mb-5 lg:mb-0">
           <img
-            className="w-60 h-60 max-w-md lg:max-w-none lg:w-[400px] lg:h-[400px] lg:rounded-xl md:rounded-2xl object-cover lg:px-8 bg-gray-800 lg:mr-8 lg:mb-10 lg:-ml-4"
-            src="https://i.ibb.co/4M6Yjgj/377149425-896894145363927-5352944729973752699-n-1.jpg"
+            loading="lazy"
+            className=" max-w-md lg:max-w-none lg:w-[400px] lg:h-[400px] lg:rounded-xl md:rounded-2xl object-cover lg:px-8 bg-gray-800 lg:mr-8 lg:mb-10 lg:-ml-4"
+            src="https://i.ibb.co/kG9rpgD/8737a131-4448-44d3-adb8-39e0647fe3c6.jpg"
             alt="Profile"
           />
         </div>
       </div>
+
+      <div className=" absolute w-[500px] opacity-50 h-[200px] right-1/2 top-0 bg-gradient-to-t  from-[#8029ab] to-[#240c30] blur-[70px] " />
+      <div className=" absolute w-[300px] right-0 opacity-50 h-[200px]  top-0 bg-gradient-to-t  from-[#8029ab] to-[#240c30] blur-[70px] " />
     </div>
   );
 };

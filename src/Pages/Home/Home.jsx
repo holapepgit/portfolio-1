@@ -1,8 +1,10 @@
+import Goals from "../../../components/Goals";
 import AboutMe from "./AboutMe";
 import Banner from "./Banner";
 import Contact from "./Contact";
+import Gallery from "./Gallery";
 import ProjectOverview from "./ProjectOverview";
-import Projects from "./Projects";
+
 import Timeline from "./Timeline";
 
 const Home = () => {
@@ -12,7 +14,8 @@ const Home = () => {
       <AboutMe />
       <Timeline />
       <ProjectOverview />
-      <Projects />
+      <Gallery />
+      <Goals />
       <Contact />
     </div>
   );
