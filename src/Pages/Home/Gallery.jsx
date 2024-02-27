@@ -36,7 +36,21 @@ export default function Gallery() {
         className="mySwiper">
         {youtubeVideosLink.map((item, index) => (
           <SwiperSlide key={index}>
-            <iframe height="100%" width="100%" src={item}></iframe>
+            {item.video ? (
+              <iframe
+                width="100%"
+                height="100%"
+                src={item.video}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen></iframe>
+            ) : (
+              <img
+                src={item.image}
+                alt="gallery"
+                className="w-full h-full object-cover"
+              />
+            )}
           </SwiperSlide>
         ))}
       </Swiper>
@@ -45,8 +59,20 @@ export default function Gallery() {
 }
 
 const youtubeVideosLink = [
-  "https://www.youtube.com/embed/tgbNymZ7vqY?mute=1",
-  "https://www.youtube.com/embed/tgbNymZ7vqY",
-  "https://www.youtube.com/embed/tgbNymZ7vqY",
-  "https://www.youtube.com/embed/tgbNymZ7vqY",
+  {
+    image: "https://i.ibb.co/0Gm5rGn/9ecedc00-29ef-47a9-a467-48439b9de4f6.jpg",
+  },
+
+  {
+    image: "https://i.ibb.co/3R4GZDH/143e66f1-c32e-4b25-8eac-d2c45db6092c.jpg",
+  },
+  {
+    video: "https://www.youtube.com/embed/xY2BjDp5qEs?si=CLYs0JgqkHqriJa6",
+  },
+  {
+    image: "https://i.ibb.co/6y8NkcQ/2a09306c-7e5c-4dc6-bea5-d036f91f5822.jpg",
+  },
+  {
+    image: "https://i.ibb.co/WsYVNQ1/5f1d3684-a487-47d4-84e5-5441fa7620a6.jpg",
+  },
 ];

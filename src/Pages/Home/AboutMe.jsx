@@ -9,13 +9,13 @@ const AboutMe = () => {
         <div className="items-center lg:flex justify-evenly">
           <div className="flex items-center justify-center w-full mt-6 lg:mt-0   lg:border-4 lg:border-black/70  rounded lg:w-[300px] lg:h-[400px]">
             <img
-              className="w-[300px] h-[400px] object-cover lg:max-w-3xl rounded-lg lg:px-8 bg-gray-800  border-red-500 lg:mb-14 lg:ml-14"
-              src="https://i.ibb.co/XF1rVcX/423062906-8151874321506327-212631828011859121-n.jpg"
+              className="w-[300px] h-[400px] object-cover lg:max-w-3xl rounded-lg lg:px-3 bg-gray-800  border-red-500 lg:mb-14 lg:ml-14"
+              src="https://i.ibb.co/Zg6dPVw/35184ba2-bfac-45c9-9ce3-e67191ef54d7.jpg"
               alt="Catalogue-pana.svg"
             />
           </div>
           <div className="w-full lg:w-1/2">
-            <ul className="lg:max-w-lg text-lg list-disc">
+            <ul className="lg:max-w-lg text-lg list-disc list-inside">
               <li className="pt-6 text-gray-700  tracking-wide">
                 The South East And South-South Nigeria are in strategic
                 locations in the Country.

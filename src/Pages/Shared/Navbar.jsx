@@ -18,7 +18,7 @@ const Navbar = () => {
         />
         <span
           onClick={() => setOpen(!isOpen)}
-          className="block md:hidden bg-black/10 rounded-lg">
+          className="block md:hidden bg-black/10 rounded-lg z-20">
           <Hamburger
             color="white"
             size={25}

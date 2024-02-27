@@ -7,6 +7,8 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <div className=" bg-primary py-4">
       <div className="text-2xl space-x-8 flex  text-white justify-center py-6">
@@ -27,7 +29,7 @@ const Footer = () => {
         </a>
       </div>
       <h1 className="text-gray-200 text-lg text-center font-medium ">
-        © 2024 Sajjad Emon. All Rights Reserved 🇮 🇳
+        © {year} Railway Corporation. All Rights Reserved.
       </h1>
     </div>
   );
