@@ -36,8 +36,8 @@ const Contact = () => {
   return (
     <div className="bg-primary " id="contact">
       <div id="contact" className="lg:mx-auto text-center  py-5  ">
-        <h2 className="text-3xl font-bold mb-2 text-gray-200">Contact Me</h2>
-        <div className="mx-auto w-24 h-1 mb-5 bg-secondary"></div>
+        <h2 className="text-3xl font-bold mb-2 text-gray-200">Contact</h2>
+        <div className="mx-auto w-16 h-1 mb-5 bg-secondary"></div>
       </div>
       <div className="container  mx-auto flex items-center justify-between lg:flex-row flex-col-reverse">
         <div className="mt-5 mx-5 lg:mt-0 lg:w-2/3 w-full ">
