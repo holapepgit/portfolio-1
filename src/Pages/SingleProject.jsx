@@ -11,7 +11,7 @@ const SingleProject = () => {
   const currentId = useParams();
 
   useEffect(() => {
-    fetch("../../../public/project.json")
+    fetch("/project.json")
       .then((res) => res.json())
       .then((data) => {
         const filteredData = data.filter((item) => item.id == currentId.id);
@@ -25,7 +25,7 @@ const SingleProject = () => {
     <div className="bg-primary pt-5">
       <ScrollRestoration />
       <div className="lg:mx-auto text-white text-center relative">
-        <h2 className="text-3xl font-bold mb-2">{data.heading}</h2>
+        <h2 className="lg:text-3xl font-bold mb-2">{data.heading}</h2>
         <div className="mx-auto w-44 h-1 mb-5 bg-secondary"></div>
         <Link
           to={"/projects"}

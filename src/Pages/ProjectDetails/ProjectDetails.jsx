@@ -9,7 +9,7 @@ const ProjectDetails = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("../../../public/project.json")
+    fetch("/project.json")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
@@ -43,7 +43,7 @@ const ProjectDetails = () => {
           <tbody>
             {tableData.map((data, index) => (
               <tr key={index} className="text-gray-300 text-sm lg:text-base ">
-                <td className="px-4 py-2">{data.title}</td>
+                <td className="px-4 py-2 ">{data.title}</td>
                 <td className="px-4 py-2">{data.details}</td>
               </tr>
             ))}
@@ -58,8 +58,14 @@ const ProjectDetails = () => {
 
       {/* projects phases */}
 
-      <div className="  space-y-28 lg:space-y-44 py-14 mt-5 bg-black/30 backdrop-blur-md">
-        <div className="grid px-10 max-w-7xl mx-auto gap-5 grid-cols-2 lg:grid-cols-3">
+      <div className="  mt-5 bg-black/30 backdrop-blur-md">
+        <div className="lg:mx-auto text-center py-10">
+          <h2 className="lg:text-3xl text-2xl font-bold text-white">
+            Project Phases
+          </h2>
+          <div className="mx-auto w-44 h-1 mb-5 bg-secondary"></div>
+        </div>
+        <div className="grid px-10 max-w-7xl mx-auto gap-5 grid-cols-1 lg:grid-cols-3">
           {data.map((item) => (
             <>
               <Link key={item.id} to={`/project/${item.id}`}>
@@ -71,7 +77,7 @@ const ProjectDetails = () => {
                   />
 
                   <div className=" absolute   h-[100px] w-full  -bottom-4 z-20 bg-gradient-to-b  from-[#502465] to-[#000000] blur-3xl" />
-                  <h1 className="text-white inset-0 flex items-end hover:bg-black/40 text-xl font-semibold absolute z-50    transition duration-400 rounded-lg p-5">
+                  <h1 className="text-white inset-0 flex items-end hover:bg-black/40  text-xl font-semibold absolute z-50    transition duration-400 rounded-lg p-5">
                     {item.heading}
                   </h1>
                 </div>
