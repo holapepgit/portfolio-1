@@ -9,7 +9,8 @@ import "./styles/global.css";
 import Banner from "./Pages/Home/Banner";
 import ProjectDetails from "./Pages/ProjectDetails/ProjectDetails";
 import ProjectOverview from "./Pages/Home/ProjectOverview";
-import Projects from "./Pages/Projects";
+
+import SingleProject from "./Pages/SingleProject";
 
 const router = createBrowserRouter([
   {
@@ -32,10 +33,10 @@ const router = createBrowserRouter([
         path: "/projects",
         element: <ProjectDetails />,
       },
-      // {
-      //   path: "/projects",
-      //   element: <Projects />,
-      // },
+      {
+        path: "/project/:id",
+        element: <SingleProject />,
+      },
     ],
   },
 ]);

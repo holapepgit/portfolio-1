@@ -1,7 +1,21 @@
 import { GoNorthStar } from "react-icons/go";
 import icon from "../../assets/icon2.png";
 import { tableData } from "../../constant/tableData";
+import { useEffect } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 const ProjectDetails = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("../../../public/project.json")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
+
+  console.log(data);
+
   return (
     <div className="bg-primary">
       <div className="flex justify-center  relative">
@@ -44,41 +58,26 @@ const ProjectDetails = () => {
 
       {/* projects phases */}
 
-      <div className=" mx-auto space-y-28 lg:space-y-44 py-14 mt-5 bg-black/30 backdrop-blur-md">
-        <div>
-          <div className="lg:mx-auto text-center">
-            <h2 className="text-2xl lg:text-3xl text-gray-200 font-bold mb-2">
-              Rail Corridors in Nigeria
-            </h2>
-            <div className="mx-auto w-40  h-1 mb-5 bg-secondary"></div>
-          </div>
-          <div className="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row lg:justify-between gap-10 lg:items-center py-8 ">
-            <ul className="list-disc max-w-lg  list-outside ml-10 lg:ml-0  text-gray-200 lg:text-xl  space-y-2">
-              <li>
-                <span className="font-semibold">157 km</span> Lagos-Ibadan
-                standard gauge rail.{" "}
-              </li>
-              <li>
-                <span className="font-semibold">186 km</span>Abuja-Kaduna
-                standard gauge rail line
-              </li>
-              <li>
-                <span className="font-semibold">327 km</span> Itakpe-Warri
-                standard gauge rail. Agbor Railway Village, Abuja Light Rail
-                project
-              </li>
-              <li>
-                <span className="font-semibold">284 km</span> Kano-Maradi
-                Standard Gauge Rail
-              </li>
-            </ul>
-            <img
-              loading="lazy"
-              className="lg:w-[600px] h-[300px] object-cover lg:rounded-lg shadow-lg"
-              src="https://img.freepik.com/free-photo/railroad-track-transportation-speed-sunset-mode-transport-motion-travel-outdoors-generative-ai_188544-8140.jpg?t=st=1708969588~exp=1708973188~hmac=a295b8e8d4a6c84aacf91e5c75dad176b173bacdb32cfe1b80f2dc095291b8f0&w=826"
-              alt=""
-            />
-          </div>
+      <div className="  space-y-28 lg:space-y-44 py-14 mt-5 bg-black/30 backdrop-blur-md">
+        <div className="grid px-10 max-w-7xl mx-auto gap-5 grid-cols-2 lg:grid-cols-3">
+          {data.map((item) => (
+            <>
+              <Link key={item.id} to={`/project/${item.id}`}>
+                <div className="relative overflow-hidden">
+                  <img
+                    src={item.image}
+                    className=" h-72 w-full object-cover rounded-lg brightness-90"
+                    alt=""
+                  />
+
+                  <div className=" absolute   h-[100px] w-full  -bottom-4 z-20 bg-gradient-to-b  from-[#502465] to-[#000000] blur-3xl" />
+                  <h1 className="text-white inset-0 flex items-end hover:bg-black/40 text-xl font-semibold absolute z-50    transition duration-400 rounded-lg p-5">
+                    {item.heading}
+                  </h1>
+                </div>
+              </Link>
+            </>
+          ))}
         </div>
       </div>
     </div>

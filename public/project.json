@@ -1,177 +1,189 @@
 [
   {
+    "id": 1,
     "heading": " Project Team",
-     
-      "text": [
-        "Professor Pat Utomi",
-        "Dr Okwuosa",
-        "Mr Emmanuel Finndoro Obasi",
-        "Prof Jude Nzeako",
-        "Dr Donald Duke"
-      ],
-      "image": "https://img.freepik.com/free-photo/choosing-right-strategy_1098-1823.jpg?t=st=1708965699~exp=1708969299~hmac=f41dcd91ccf59f27c4b2ad1605800c928d03eb3087fa76abca2924591776288d&w=826"
-    
+
+    "text": [
+      "Professor Pat Utomi",
+      "Dr Okwuosa",
+      "Mr Emmanuel Finndoro Obasi",
+      "Prof Jude Nzeako",
+      "Dr Donald Duke"
+    ],
+    "image": "https://img.freepik.com/free-photo/choosing-right-strategy_1098-1823.jpg?t=st=1708965699~exp=1708969299~hmac=f41dcd91ccf59f27c4b2ad1605800c928d03eb3087fa76abca2924591776288d&w=826"
   },
   {
+    "id": 2,
     "heading": "Project Funding",
-     
-      "text": [
-        "Concept Studies $10,000",
-        "Project Definition and Route Mapping = $2.5m",
-        "Project Infrastructure Development and Logistics = $15bn"
-      ],
-      "image": "https://img.freepik.com/free-photo/hand-putting-mix-coins-seed-clear-bottle-copyspace-business-investment-growth-concept_1423-104.jpg?t=st=1708969307~exp=1708972907~hmac=1f216749193e8fe5919e0734a718a00de8dd0e93c38ff01dd84c05741ebec6ed&w=826"
-    
+
+    "text": [
+      "Concept Studies $10,000",
+      "Project Definition and Route Mapping = $2.5m",
+      "Project Infrastructure Development and Logistics = $15bn"
+    ],
+    "image": "https://img.freepik.com/free-photo/hand-putting-mix-coins-seed-clear-bottle-copyspace-business-investment-growth-concept_1423-104.jpg?t=st=1708969307~exp=1708972907~hmac=1f216749193e8fe5919e0734a718a00de8dd0e93c38ff01dd84c05741ebec6ed&w=826"
   },
   {
+    "id": 3,
     "heading": "Economic Corridors",
-   
-      "text": [
-        "The Western Economic Corridor (LAKAJI)",
-        "The Eastern Economic Corridor (2NEC)",
-        "The LAKAJI corridor runs from Lagos, Kano, and Jibiya in Katsina State.",
-        "The Eastern corridor, goes from Port Harcourt, through Enugu, to Maiduguri, has been abandoned.",
-        "This project will likely reactivate it"
-      ],
-      "image": "https://img.freepik.com/free-photo/graph-going-up-red-arrow-bar-graph-with-arrow-business-concept_35913-3361.jpg?t=st=1708969347~exp=1708972947~hmac=1c3d9dfc9ee054f93f4970186c5f9b7de06e6166896c1665a486159b549722bb&w=900"
-    
+
+    "text": [
+      "The Western Economic Corridor (LAKAJI)",
+      "The Eastern Economic Corridor (2NEC)",
+      "The LAKAJI corridor runs from Lagos, Kano, and Jibiya in Katsina State.",
+      "The Eastern corridor, goes from Port Harcourt, through Enugu, to Maiduguri, has been abandoned.",
+      "This project will likely reactivate it"
+    ],
+    "image": "https://img.freepik.com/free-photo/graph-going-up-red-arrow-bar-graph-with-arrow-business-concept_35913-3361.jpg?t=st=1708969347~exp=1708972947~hmac=1c3d9dfc9ee054f93f4970186c5f9b7de06e6166896c1665a486159b549722bb&w=900"
   },
   {
+    "id": 4,
     "heading": "EXISTING CONDITIONS",
-      "text": [
-        "Railways in Nigeria consist of a 3,505 km Cape gauge national railway network and 669 km of standard gauge.",
-        "The Cape gauge network is in poor condition due to lack of maintenance",
-        "The Western Line and the Eastern Line.",
-        "The western line connects Lagos on the Bight of Benin to Naguru in the northern state of Yobe, over a distance of 1,126 kilometres,",
-        "The eastern Line connects Port Harcourt in the southeast to Maiduguri in the northeastern state of Borno, near the border with Chad (currently not fully functional) ",
-        "There is no active rail corridor in the two S regions"
-      ],
-      "image": "https://i.ibb.co/yV7hLFK/pexels-nothing-ahead-6564830-1.jpg"
+    "text": [
+      "Railways in Nigeria consist of a 3,505 km Cape gauge national railway network and 669 km of standard gauge.",
+      "The Cape gauge network is in poor condition due to lack of maintenance",
+      "The Western Line and the Eastern Line.",
+      "The western line connects Lagos on the Bight of Benin to Naguru in the northern state of Yobe, over a distance of 1,126 kilometres,",
+      "The eastern Line connects Port Harcourt in the southeast to Maiduguri in the northeastern state of Borno, near the border with Chad (currently not fully functional) ",
+      "There is no active rail corridor in the two S regions"
+    ],
+    "image": "https://i.ibb.co/yV7hLFK/pexels-nothing-ahead-6564830-1.jpg"
   },
   {
+    "id": 5,
     "heading": "Problem Analysis",
-      "text": [
-        "High levels of youth and graduate unemployment",
-        "Poor road and transport infrastructure affecting economic activities",
-        "Limited access to farms and markets for the movement of farm produce",
-        "Inefficient transportation network hindering regional growth"
-      ],
-      "image": "https://img.freepik.com/free-photo/businesspeople-working-finance-accounting-analyze-financi_74952-1411.jpg?t=st=1708969514~exp=1708973114~hmac=d714cd18779a0be39b46bec3170c9820d5605c4bffcf3a50cad1ede429d24dc0&w=826"
+    "text": [
+      "High levels of youth and graduate unemployment",
+      "Poor road and transport infrastructure affecting economic activities",
+      "Limited access to farms and markets for the movement of farm produce",
+      "Inefficient transportation network hindering regional growth"
+    ],
+    "image": "https://img.freepik.com/free-photo/businesspeople-working-finance-accounting-analyze-financi_74952-1411.jpg?t=st=1708969514~exp=1708973114~hmac=d714cd18779a0be39b46bec3170c9820d5605c4bffcf3a50cad1ede429d24dc0&w=826"
   },
   {
+    "id": 6,
     "heading": " Rail Corridors in Nigeria",
-      "text": [
-        "157 km Lagos-Ibadan standard gauge rail.",
-        "186 km Abuja-Kaduna standard gauge rail line",
-        "327 km Itakpe-Warri standard gauge rail.Agbor Railway Village, Abuja Light Rail project",
-        "284 km Kano-Maradi Standard Gauge Rail"
-      ],
-      "image": "https://img.freepik.com/free-photo/railroad-track-transportation-speed-sunset-mode-transport-motion-travel-outdoors-generative-ai_188544-8140.jpg?t=st=1708969588~exp=1708973188~hmac=a295b8e8d4a6c84aacf91e5c75dad176b173bacdb32cfe1b80f2dc095291b8f0&w=826"
+    "text": [
+      "157 km Lagos-Ibadan standard gauge rail.",
+      "186 km Abuja-Kaduna standard gauge rail line",
+      "327 km Itakpe-Warri standard gauge rail.Agbor Railway Village, Abuja Light Rail project",
+      "284 km Kano-Maradi Standard Gauge Rail"
+    ],
+    "image": "https://img.freepik.com/free-photo/railroad-track-transportation-speed-sunset-mode-transport-motion-travel-outdoors-generative-ai_188544-8140.jpg?t=st=1708969588~exp=1708973188~hmac=a295b8e8d4a6c84aacf91e5c75dad176b173bacdb32cfe1b80f2dc095291b8f0&w=826"
   },
   {
+    "id": 7,
     "heading": "PHASE II: ROUTE MAPPING",
-      "text": [
-        "Identify and analyse alternative routes for the railway network.",
-        "Assess the environmental and social impact of each potential route.",
-        "Evaluate the cost implications and construction feasibility of the proposed routes.",
-        "Utilize appropriate mapping technologies for data acquisition and processing.",
-        "Develop a phased approach for project implementation, allowing flexibility for adjustments based on learnings from earlier stages."
-      ],
-      "image": "https://img.freepik.com/premium-vector/route-vector-icon-route-destination-with-map-pin-doted-line-vector-illustration-eps-10_532800-355.jpg?w=740"
-    },
+    "text": [
+      "Identify and analyse alternative routes for the railway network.",
+      "Assess the environmental and social impact of each potential route.",
+      "Evaluate the cost implications and construction feasibility of the proposed routes.",
+      "Utilize appropriate mapping technologies for data acquisition and processing.",
+      "Develop a phased approach for project implementation, allowing flexibility for adjustments based on learnings from earlier stages."
+    ],
+    "image": "https://img.freepik.com/premium-vector/route-vector-icon-route-destination-with-map-pin-doted-line-vector-illustration-eps-10_532800-355.jpg?w=740"
+  },
   {
+    "id": 8,
     "heading": "DELIVERABLES",
-      "text": [
-        "Detailed maps highlighting alternative railway routes",
-        "Environmental and social impact assessments for each route",
-        "Cost analysis and feasibility reports for the proposed routes.",
-        "Recommendations for the optimal railway network based on the analysis.",
-        "Project documentation, including methodology, data sources, and analysis techniques."
-      ],
-      "image": "https://i.ibb.co/n0SR5WW/2fb62ce9-e32d-4e04-b2ef-c4ac22caaf82.jpg"
-    },
+    "text": [
+      "Detailed maps highlighting alternative railway routes",
+      "Environmental and social impact assessments for each route",
+      "Cost analysis and feasibility reports for the proposed routes.",
+      "Recommendations for the optimal railway network based on the analysis.",
+      "Project documentation, including methodology, data sources, and analysis techniques."
+    ],
+    "image": "https://i.ibb.co/n0SR5WW/2fb62ce9-e32d-4e04-b2ef-c4ac22caaf82.jpg"
+  },
   {
+    "id": 9,
     "heading": "GEOGRAPHY",
-      "text": [
-        "Geographic Extent:",
-        "The mapping project will cover the entire southeast and southern regions of Nigeria, including detailed assessments of potential railway routes and their impact on the surrounding areas.",
-        "Technology and Methods:",
-        "Utilize advanced mapping technologies such as LiDAR, satellite imagery, and aerial photography for data acquisition. Geographic Information System (GIS) software will be employed for data analysis and mapping.Social and environmental impact assessments will be conducted using a combination of field surveys and community consultations.",
-        "Format of Final Deliverables:",
-        "The final deliverables will include comprehensive reports in both digital and printed formats. Maps, charts, and visual representations will be included to enhance understanding. All documentation will be made available in auser-friendly format for easy reference and dissemination."
-      ],
-      "image": "https://i.ibb.co/q971MJQ/5d3aaec0-be08-4505-a3c1-b39f88c465a2.jpg"
-    },
+    "text": [
+      "Geographic Extent:",
+      "The mapping project will cover the entire southeast and southern regions of Nigeria, including detailed assessments of potential railway routes and their impact on the surrounding areas.",
+      "Technology and Methods:",
+      "Utilize advanced mapping technologies such as LiDAR, satellite imagery, and aerial photography for data acquisition. Geographic Information System (GIS) software will be employed for data analysis and mapping.Social and environmental impact assessments will be conducted using a combination of field surveys and community consultations.",
+      "Format of Final Deliverables:",
+      "The final deliverables will include comprehensive reports in both digital and printed formats. Maps, charts, and visual representations will be included to enhance understanding. All documentation will be made available in auser-friendly format for easy reference and dissemination."
+    ],
+    "image": "https://i.ibb.co/q971MJQ/5d3aaec0-be08-4505-a3c1-b39f88c465a2.jpg"
+  },
   {
+    "id": 10,
     "heading": "ROUTE MAPPING TIMELINE",
-      "text": [
-        "The project will be conducted over a 6-month period, broken down as follows:",
-        "Month 1: Planning and Stakeholder Engagement",
-        "Month 2-3: Data Acquisition and Analysis",
-        "Month 3-4: Impact Assessment and Feasibility Studies",
-        "Month 4-5: Recommendations and Reporting",
-        "Month 5-6: Final Review and Presentation",  
-        "Budget:",  
-        "The estimated budget for the entire route mapping project is $2.5 million, covering expenses related to data acquisition, technology use, manpower, and documentation."
-      ],
-      "image": "https://i.ibb.co/N9w8ZMX/639ccf32-6459-49e5-b4cc-4f62694f5e8c.jpg"
-    },
+    "text": [
+      "The project will be conducted over a 6-month period, broken down as follows:",
+      "Month 1: Planning and Stakeholder Engagement",
+      "Month 2-3: Data Acquisition and Analysis",
+      "Month 3-4: Impact Assessment and Feasibility Studies",
+      "Month 4-5: Recommendations and Reporting",
+      "Month 5-6: Final Review and Presentation",
+      "Budget:",
+      "The estimated budget for the entire route mapping project is $2.5 million, covering expenses related to data acquisition, technology use, manpower, and documentation."
+    ],
+    "image": "https://i.ibb.co/N9w8ZMX/639ccf32-6459-49e5-b4cc-4f62694f5e8c.jpg"
+  },
   {
+    "id": 11,
     "heading": "PHASE III: INFRASTRUCTURE",
-     "text": [
-    "The primary objective of constructing a rail line infrastructure linking the South East and South-South States of Nigeria is to:",
-    "Enhance regional connectivity,",
-    "Foster economic development,",
-    "Promote social integration.",
-    "This ambitious project aims to address various challenges and capitalize on opportunities, with the overarching goal of contributing to the sustainable growth of the regions involved"
-],
+    "text": [
+      "The primary objective of constructing a rail line infrastructure linking the South East and South-South States of Nigeria is to:",
+      "Enhance regional connectivity,",
+      "Foster economic development,",
+      "Promote social integration.",
+      "This ambitious project aims to address various challenges and capitalize on opportunities, with the overarching goal of contributing to the sustainable growth of the regions involved"
+    ],
 
-      "image": "https://i.ibb.co/FxZNYn0/bc9b7e2f-1351-40a8-a2b0-f8f91f44d398.jpg"
-    },
+    "image": "https://i.ibb.co/FxZNYn0/bc9b7e2f-1351-40a8-a2b0-f8f91f44d398.jpg"
+  },
   {
+    "id": 12,
     "heading": "INFRASTRUCTURE CONT’D",
-     "text": [
-    "Specific Objectives",
-    "Improved Transportation Efficiency: Develop a modern and efficient rail network to facilitate the seamless movement of goods and passengers between the South East and South-South States. This will alleviate congestion on existing road networks, reduce transportation costs, and enhance overall logistical efficiency.",
-    "Economic Development: Foster economic growth by creating new opportunities for trade, commerce, and investment. The rail infrastructure will provide a reliable and cost-effective means of transporting goods, stimulating business activities, and attracting both local and foreign investments to the regions."
-],
+    "text": [
+      "Specific Objectives",
+      "Improved Transportation Efficiency: Develop a modern and efficient rail network to facilitate the seamless movement of goods and passengers between the South East and South-South States. This will alleviate congestion on existing road networks, reduce transportation costs, and enhance overall logistical efficiency.",
+      "Economic Development: Foster economic growth by creating new opportunities for trade, commerce, and investment. The rail infrastructure will provide a reliable and cost-effective means of transporting goods, stimulating business activities, and attracting both local and foreign investments to the regions."
+    ],
 
-      "image": "https://i.ibb.co/1G67ZpV/d92a2936-0992-4041-9a6a-09edb60aba1d.jpg"
-    },
+    "image": "https://i.ibb.co/1G67ZpV/d92a2936-0992-4041-9a6a-09edb60aba1d.jpg"
+  },
   {
+    "id": 13,
     "heading": "METHODOLOGY",
-     "text": [
-    "Phase I - Establishment of Rail Authority",
-    "Phase II - Rail Infrastructure Development",
-    "Phase III - Build and Manage Rail Operations",
-    "Phase IV - Launch Rail Services",
-    "Phase V - Rail Relationship Management",
-    "Phase VI - Capacity Building, Knowledge sharing etc"
-],
+    "text": [
+      "Phase I - Establishment of Rail Authority",
+      "Phase II - Rail Infrastructure Development",
+      "Phase III - Build and Manage Rail Operations",
+      "Phase IV - Launch Rail Services",
+      "Phase V - Rail Relationship Management",
+      "Phase VI - Capacity Building, Knowledge sharing etc"
+    ],
 
-      "image": "https://i.ibb.co/9hYsJVT/36edcf19-1528-4f10-b09e-d03451593ead.jpg"
-    },
+    "image": "https://i.ibb.co/9hYsJVT/36edcf19-1528-4f10-b09e-d03451593ead.jpg"
+  },
   {
+    "id": 14,
     "heading": "Object 3",
-      "text": [
-    "The proposed railway network holds significant potential for socio-economic development in South-South/South-East Nigeria.",
-    "Sustainable development is possible because of fully net zero carbon neutral and no fossil fuels used.",
-    "Zero impact on day-to-day traffic flow in rapidly urbanizing cities.",
-    "More passengers can use it for their daily transportation.",
-    "More time-efficient."
-],
+    "text": [
+      "The proposed railway network holds significant potential for socio-economic development in South-South/South-East Nigeria.",
+      "Sustainable development is possible because of fully net zero carbon neutral and no fossil fuels used.",
+      "Zero impact on day-to-day traffic flow in rapidly urbanizing cities.",
+      "More passengers can use it for their daily transportation.",
+      "More time-efficient."
+    ],
 
-      "image": "https://i.ibb.co/j4CWHmc/6317348c-6a7b-4540-8886-3368d41323f5.jpg"
-    },
+    "image": "https://i.ibb.co/j4CWHmc/6317348c-6a7b-4540-8886-3368d41323f5.jpg"
+  },
   {
+    "id": 15,
     "heading": "ALTERNATIVES",
-      "text": [
-    "Alternative Routes: Explore and analyse different potential routes, considering environmental impact, social impact, cost, and construction feasibility.",
-    "Mapping Technologies: Investigate the use of alternative mapping technologies such as LiDAR or aerial photography based on project requirements and budget constraints.",
-    "Phased Approach: Consider implementing the project in phases, allowing for adjustments based on learnings from earlier stages, ensuring flexibility in decision-making.",
-    "By incorporating these alternatives, the project aims to provide a well-informed and flexible approach to the development of the railway network, taking into account various factors and potential challenges."
-],
+    "text": [
+      "Alternative Routes: Explore and analyze different potential routes, considering environmental impact, social impact, cost, and construction feasibility.",
+      "Mapping Technologies: Investigate the use of alternative mapping technologies such as LiDAR or aerial photography based on project requirements and budget constraints.",
+      "Phased Approach: Consider implementing the project in phases, allowing for adjustments based on learnings from earlier stages, ensuring flexibility in decision-making.",
+      "By incorporating these alternatives, the project aims to provide a well-informed and flexible approach to the development of the railway network, taking into account various factors and potential challenges."
+    ],
 
-      "image": "https://i.ibb.co/2sCPPz0/a99870e3-956a-47e2-b9eb-fd98cea2696b.jpg"
-    }
+    "image": "https://i.ibb.co/2sCPPz0/a99870e3-956a-47e2-b9eb-fd98cea2696b.jpg"
+  }
 ]
