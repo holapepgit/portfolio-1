@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import { Link } from "react-router-dom";
 import { Fade as Hamburger } from "hamburger-react";
-
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   // const isMounted = useRef(true);
@@ -55,6 +54,13 @@ const Navbar = () => {
             className="text-gray-300  hover:text-white text-xl lg:text-lg font-medium  transition-all duration-300 inline-block"
             onClick={() => setOpen(!isOpen)}>
             Contact
+          </a>
+          <a
+            href="/presentation.pdf"
+            download
+            className="text-gray-300  hover:text-white text-xl lg:text-lg font-medium  transition-all duration-300 inline-block cursor-pointer"
+            onClick={() => setOpen(!isOpen)}>
+            Download
           </a>
         </div>
       </div>

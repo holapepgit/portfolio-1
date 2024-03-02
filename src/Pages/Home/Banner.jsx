@@ -1,8 +1,5 @@
 import "aos/dist/aos.css";
-import {
-  FaPhone,
-  FaWhatsapp,
-} from "react-icons/fa";
+// import { FaPhone, FaWhatsapp } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
@@ -11,7 +8,7 @@ const Banner = () => {
       <div className="flex  flex-col-reverse justify-evenly lg:flex-row ">
         <div className="lg:w-1/2 lg:pr-8 z-20">
           <div className="pl-2  space-y-2">
-            <h1 className="text-2xl lg:text-5xl font-bold  ">
+            <h1 className="text-2xl lg:text-5xl font-bold lg:mt-10 ">
               Regional Railway Network
             </h1>
             <h1 className="text-3xl lg:text-5xl font-bold   ">
@@ -27,16 +24,18 @@ const Banner = () => {
                 repeat={3}
               />
             </h1>
-            <p className="  k font-semibold lg:text-2xl text-lg">Contact with Us</p>
+            {/* <p className="  k font-semibold lg:text-2xl text-lg">
+              Contact with Us
+            </p> */}
 
-            <div className=" lg:space-x-6 space-x-4 flex py-2 items-center">
+            {/* <div className=" lg:space-x-6 space-x-4 flex py-2 items-center">
               <a href="" className="k">
                 <FaWhatsapp className="text-4xl"/>
               </a>
               <a href="" className="k">
                 <FaPhone  className="rotate-90 text-2xl"/>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 

@@ -17,7 +17,7 @@ const ProjectDetails = () => {
   console.log(data);
 
   return (
-    <div className="bg-primary">
+    <div className="bg-primary ">
       <div className="flex justify-center  relative">
         <img
           className="object-cover w-full lg:h-[500px]  lg:w-full "
@@ -58,7 +58,7 @@ const ProjectDetails = () => {
 
       {/* projects phases */}
 
-      <div className="  mt-5 bg-black/30 backdrop-blur-md">
+      <div className="  mt-5 bg-black/30 backdrop-blur-md pb-10">
         <div className="lg:mx-auto text-center py-10">
           <h2 className="lg:text-3xl text-2xl font-bold text-white">
             Project Phases

@@ -7,61 +7,24 @@ const Timeline = () => {
       </div>
       <div className="w-10/12 max-w-2xl mx-auto">
         <article className="timeline-item">
-          <h4>Sept - 2020</h4>
-          <p>Currently working on a full stack MERN project.</p>
-          <span className="number"> 6</span>
-        </article>
-        <article className="timeline-item">
-          <h4>Aug - 2020</h4>
           <p>
-            Started writing blogs, sharing my knowledge, and giving back to the
-            community. Got pretty active on twitter, Connected with a lot of
-            like-minded developers, and trying to be an active member of the
-            community as much as I can, also made my blog with the help of
-            Django to share what I learned with the community.
-          </p>
-          <span className="number"> 5 </span>
-        </article>
-        <article className="timeline-item">
-          <h4>April - 2020</h4>
-          <p>
-            Got hands onto react and nodejs, both are amazing technologies and
-            slowly started getting my hands dirty with MERN stack and learning
-            how to make to full-fledged apps out of it.
-          </p>
-          <span className="number"> 4 </span>
-        </article>
-        <article className="timeline-item">
-          <h4> Jan - 2020</h4>
-          <p>
-            Started with JavaScript, its a complete language in itself and it
-            took me a while to get on hold with it. Played around with
-            JavaScript, skimmed through its frameworks, and make some small
-            projects out of it.
-          </p>
-          <span className="number"> 3 </span>
-        </article>
-        <article className="timeline-item">
-          <h4>2019</h4>
-          <p>
-            School over, came into college. Started learning web development.
-            Cleared the basics like how the web works, how files are
-            transferred, and all. Then completed an HTML, CSS course and
-            designed some basic websites with it that lacked functionality, and
-            as I knew python I played around with Django and learned a lot about
-            how the backend works
-          </p>
-          <span className="number"> 2 </span>
-        </article>
-        <article className="timeline-item">
-          <h4>2018</h4>
-          <p>
-            Started with learning python, my main goal with programming was to
-            create things that could help the masses. Python was a great
-            language to jump on but it didn't teach the basics of how computer
-            work so I learned java and C with it.
+            Several discussions have taken place in the public domain and among
+            indigenes of these zones about the need for rail infrastructure in
+            the zone. The Federal government, for some reason only known to it,
+            has not considered it necessary to undertake this all-important
+            project in the zones
           </p>
           <span className="number"> 1 </span>
+        </article>
+        <article className="timeline-item">
+          <p>
+            Since 2022 the needed for a rail system in the two zones has been
+            constantly talked about in important places including among State
+            governors and businessmen. Our group shopped around for a private
+            sector investor who could undertake this project. We luckily found
+            one.
+          </p>
+          <span className="number"> 2 </span>
         </article>
       </div>
     </section>
