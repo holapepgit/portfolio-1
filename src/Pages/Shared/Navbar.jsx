@@ -10,7 +10,9 @@ const Navbar = () => {
     <div
       className={`lg:flex justify-between  items-center  px-4 md:px-8 lg:px-10 py-4 bg-primary w-full z-50 `}>
       <div className="flex justify-between items-center">
-        <img className="h-12 w-12 rounded-full z-20" src={logo} alt="" />
+        <Link to={"/"}>
+          <img className="h-12 w-12 rounded-full z-20" src={logo} alt="" />
+        </Link>
         <span
           onClick={() => setOpen(!isOpen)}
           className="block md:hidden bg-black/10 rounded-lg z-20">
