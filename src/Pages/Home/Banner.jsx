@@ -41,7 +41,6 @@ const Banner = () => {
 
         <div className="flex items-center justify-center w-auto  lg:mt-0 shadow-xl lg:border-4 rounded-md border-secondary  lg:w-[400px] lg:h-[400px] mb-5 lg:mb-0">
           <img
-            loading="lazy"
             className=" max-w-md lg:max-w-none lg:w-[400px] lg:h-[400px] lg:rounded-xl md:rounded-2xl object-cover lg:px-3 bg-gray-800 lg:mr-8 lg:mb-10 lg:-ml-4"
             src="https://i.ibb.co/kG9rpgD/8737a131-4448-44d3-adb8-39e0647fe3c6.jpg"
             alt="Profile"
