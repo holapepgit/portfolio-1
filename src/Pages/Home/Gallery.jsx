@@ -4,7 +4,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-import { images } from "../../global";
 
 export default function Gallery() {
   return (
@@ -57,72 +56,72 @@ export default function Gallery() {
 
 const youtubeVideosLink = [
   {
-    image: images.img1,
+    image: "https://i.ibb.co/ySLLJcr/1.png",
   },
   {
-    image: images.img13,
+    image: "https://i.ibb.co/Snq8NK4/2.png",
   },
   {
     video: "https://www.youtube.com/embed/E85oM1URCZ0?si=CaIKkuDcd9_W03Nk",
   },
   {
-    image: images.img2,
+    image: "https://i.ibb.co/vZTJhXf/3.png",
   },
   {
     video: "https://www.youtube.com/embed/8M2tfT6vntA?si=QZtKUD-hyxcdz0Dk",
   },
   {
-    image: images.img3,
+    image: "https://i.ibb.co/dcynVtk/4.png",
   },
   {
     video: "https://www.youtube.com/embed/Wet4AMgsIu0?si=wunZYKeVjK9Afz3k",
   },
   {
-    image: images.img4,
+    image: "https://i.ibb.co/JrDtt7Z/5.png",
   },
   {
     video: "https://www.youtube.com/embed/0oTjJBSssII?si=QJd_A1f558yhhcMM",
   },
   {
-    image: images.img5,
+    image: "https://i.ibb.co/jf1091b/6.png",
   },
   {
     video: "https://www.youtube.com/embed/d9byjTHciUw?si=lxEOXINnw1z2trQG",
   },
   {
-    image: images.img6,
+    image: "https://i.ibb.co/YjXHtq4/7.png",
   },
   {
     video: "https://www.youtube.com/embed/ZnAUcBM6QxE?si=sdBoJlJR9IQViIEV",
   },
   {
-    image: images.img7,
+    image: "https://i.ibb.co/jwb128r/8.png",
   },
   {
     video: "https://www.youtube.com/embed/wVoYNXAU958?si=8PFfFNAeAdO1U9es",
   },
   {
-    image: images.img8,
+    image: "https://i.ibb.co/XZKdpbB/9.png",
   },
   {
     video: "https://www.youtube.com/embed/k45eMdggg_8?si=ySMfraJDzO0XSkzq",
   },
   {
-    image: images.img9,
+    image: "https://i.ibb.co/31qRqTF/10.png",
   },
   {
     video: "https://www.youtube.com/embed/JouK9kfjzEw?si=JOGzKb-_p65ytDwS",
   },
   {
-    image: images.img10,
+    image: "https://i.ibb.co/5nCvSGP/11.png",
   },
   {
     video: "https://www.youtube.com/embed/GJFreVM-ihQ?si=RRP1wrvCecFWeD2p",
   },
   {
-    image: images.img11,
+    image: "https://i.ibb.co/dBF9P88/12.png",
   },
   {
-    image: images.img12,
+    image: "https://i.ibb.co/1K9wjsX/13.png",
   },
 ];
