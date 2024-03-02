@@ -41,7 +41,6 @@ export default function Gallery() {
                 allowFullScreen></iframe>
             ) : (
               <img
-                loading="lazy"
                 src={item.image}
                 alt="gallery"
                 className="w-full h-full object-cover object-left"
