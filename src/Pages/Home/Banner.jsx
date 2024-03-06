@@ -29,14 +29,14 @@ const Banner = () => {
             </h1>
             <p className="  k font-semibold lg:text-2xl text-lg">Contact with Us</p>
 
-            <div className=" lg:space-x-6 space-x-4 flex py-2 items-center">
+            {/* <div className=" lg:space-x-6 space-x-4 flex py-2 items-center">
               <a href="" className="k">
                 <FaWhatsapp className="text-4xl"/>
               </a>
               <a href="" className="k">
                 <FaPhone  className="rotate-90 text-2xl"/>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
