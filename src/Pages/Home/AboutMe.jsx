@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <>
-      <div id="background" className=" px-6 py-16 mx-auto bg-white">
+      <div id="background" className=" px-6 py-12 mx-auto bg-white">
         <div className="lg:mx-auto text-center">
           <h2 className="text-3xl font-bold mb-2">Background</h2>
           <div className="mx-auto w-28 h-1 mb-5 bg-secondary"></div>

@@ -11,6 +11,8 @@ import ProjectDetails from "./Pages/ProjectDetails/ProjectDetails";
 import ProjectOverview from "./Pages/Home/ProjectOverview";
 
 import SingleProject from "./Pages/SingleProject";
+import Background from "./Pages/Background";
+import ContactUs from "./Pages/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/background",
+        element: <Background />,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs />,
       },
       {
         path: "/banner",

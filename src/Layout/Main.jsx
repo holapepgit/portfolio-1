@@ -8,7 +8,9 @@ const Main = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <Outlet></Outlet>
+      <div className="min-h-[calc(100vh-141px)]">
+        <Outlet></Outlet>
+      </div>
       <Footer></Footer>
       <Helmet>
         <meta property="og:title" content="Your Website Title" />

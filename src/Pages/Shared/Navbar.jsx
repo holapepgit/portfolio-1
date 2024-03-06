@@ -39,20 +39,6 @@ const Navbar = () => {
               {option.name}
             </Link>
           ))}
-
-          <a
-            href="./#background"
-            className="text-gray-300  hover:text-white text-xl lg:text-lg font-medium  transition-all duration-300 inline-block"
-            onClick={() => setOpen(!isOpen)}>
-            About
-          </a>
-
-          <a
-            href="./#contact"
-            className="text-gray-300  hover:text-white text-xl lg:text-lg font-medium  transition-all duration-300 inline-block"
-            onClick={() => setOpen(!isOpen)}>
-            Contact
-          </a>
           <a
             href="/presentation.pdf"
             download
@@ -74,6 +60,14 @@ const navOptions = [
   {
     name: "Project Details",
     path: "/projects",
+  },
+  {
+    name: "Background",
+    path: "/background",
+  },
+  {
+    name: "Contact",
+    path: "/contact",
   },
 ];
 
