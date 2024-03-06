@@ -1,16 +1,31 @@
 import { Outlet } from "react-router-dom";
- 
+
+import { Helmet } from "react-helmet";
 import Footer from "../Pages/Shared/Footer";
 import Navbar from "../Pages/Shared/Navbar";
 
 const Main = () => {
-    return (
-        <div>
-            <Navbar></Navbar>
-            <Outlet></Outlet>
-            <Footer></Footer>
-        </div>
-    );
+  return (
+    <div>
+      <Navbar></Navbar>
+      <Outlet></Outlet>
+      <Footer></Footer>
+      <Helmet>
+        <meta property="og:title" content="Your Website Title" />
+        <meta
+          property="og:description"
+          content="Description of your website."
+        />
+        <meta
+          property="og:image"
+          content="URL to the image you want to display"
+        />
+        <meta property="og:url" content="URL of the current page" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Your Website Name" />
+      </Helmet>
+    </div>
+  );
 };
 
 export default Main;

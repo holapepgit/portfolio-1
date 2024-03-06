@@ -35,7 +35,7 @@ const AboutMe = () => {
               <a
                 href="#contact"
                 className="w-fit inline-block px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-gray-600 rounded-lg lg:w-auto hover:bg-gray-500 focus:outline-none focus:bg-gray-500">
-                Connect With Me
+                Connect With Us
               </a>
             </ul>
           </div>

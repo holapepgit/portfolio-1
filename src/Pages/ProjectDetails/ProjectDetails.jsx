@@ -1,87 +1,98 @@
 import { GoNorthStar } from "react-icons/go";
 import icon from "../../assets/icon2.png";
 import { tableData } from "../../constant/tableData";
+import { useEffect } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 const ProjectDetails = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("/project.json")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
+
+  console.log(data);
+
   return (
-    <div className="bg-primary">
-      <div className="flex justify-center  relative">
-        <img
-          className="object-cover w-full lg:h-[500px]  lg:w-full "
-          src="https://i.ibb.co/PG9m9Yp/marc-olivier-jodoin-HIi-NFXcbt-Q-unsplash.jpg"
-        />
-        <div className="flex absolute  bg-black/60 inset-0 z-10  justify-center items-center">
-          <GoNorthStar className="text-5xl text-gray-200" />
-          <h1 className="  lg:text-5xl text-2xl font font-semibold text-white px-2">
-            PROJECT FACT SHEET
-          </h1>
-          <GoNorthStar className="text-5xl text-gray-200" />
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>RRN | Project Details</title>
+      </Helmet>
+      <div className="bg-primary ">
+        <div className="flex justify-center  relative">
+          <img
+            className="object-cover w-full lg:h-[500px]  lg:w-full "
+            src="https://i.ibb.co/PG9m9Yp/marc-olivier-jodoin-HIi-NFXcbt-Q-unsplash.jpg"
+          />
+          <div className="flex absolute  bg-black/60 inset-0 z-10  justify-center items-center">
+            <GoNorthStar className="text-5xl text-gray-200" />
+            <h1 className="  lg:text-5xl text-2xl font font-semibold text-white px-2">
+              PROJECT FACT SHEET
+            </h1>
+            <GoNorthStar className="text-5xl text-gray-200" />
+          </div>
         </div>
-      </div>
 
-      <div className="max-w-4xl my-5   relative border border-gray-700 mx-1 lg:mx-auto   rounded-lg bg-gradient-to-l from-neutral-950/80 to-neutral-900">
-        <table className="p-3 lg:p-7  h-full lg:text-justify  shadow-lg rounded bg-   overflow-hidden">
-          <thead className="text-xs lg:text-[19px]">
-            <th className="px-4 py-2  text-gray-300 w-80">Project title</th>
-            <th className="px-4 py-2  text-gray-300">
-              South-East & South-South Rail Network
-            </th>
-          </thead>
-          <tbody>
-            {tableData.map((data, index) => (
-              <tr key={index} className="text-gray-300 text-sm lg:text-base ">
-                <td className="px-4 py-2">{data.title}</td>
-                <td className="px-4 py-2">{data.details}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-        <img
-          src={icon}
-          alt="icon"
-          className=" absolute top-0 lg:left-72 left-1/2 z-10 w-7 lg:w-auto"
-        />
-      </div>
+        <div className="max-w-4xl my-5   relative border border-gray-700 mx-1 lg:mx-auto   rounded-lg bg-gradient-to-l from-neutral-950/80 to-neutral-900">
+          <table className="p-3 lg:p-7  h-full lg:text-justify  shadow-lg rounded bg-   overflow-hidden">
+            <thead className="text-xs lg:text-[19px]">
+              <th className="px-4 py-2  text-gray-300 w-80">Project title</th>
+              <th className="px-4 py-2  text-gray-300">
+                South-East & South-South Rail Network
+              </th>
+            </thead>
+            <tbody>
+              {tableData.map((data, index) => (
+                <tr key={index} className="text-gray-300 text-sm lg:text-base ">
+                  <td className="px-4 py-2 ">{data.title}</td>
+                  <td className="px-4 py-2">{data.details}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <img
+            src={icon}
+            alt="icon"
+            className=" absolute top-0 lg:left-72 left-1/2 z-10 w-7 lg:w-auto"
+          />
+        </div>
 
-      {/* projects phases */}
+        {/* projects phases */}
 
-      <div className=" mx-auto space-y-28 lg:space-y-44 py-14 mt-5 bg-black/30 backdrop-blur-md">
-        <div>
-          <div className="lg:mx-auto text-center">
-            <h2 className="text-2xl lg:text-3xl text-gray-200 font-bold mb-2">
-              Rail Corridors in Nigeria
+        <div className="  mt-5 bg-black/30 backdrop-blur-md pb-10">
+          <div className="lg:mx-auto text-center py-10">
+            <h2 className="lg:text-3xl text-2xl font-bold text-white">
+              Project Phases
             </h2>
-            <div className="mx-auto w-40  h-1 mb-5 bg-secondary"></div>
+            <div className="mx-auto w-44 h-1 mb-5 bg-secondary"></div>
           </div>
-          <div className="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row lg:justify-between gap-10 lg:items-center py-8 ">
-            <ul className="list-disc max-w-lg  list-outside ml-10 lg:ml-0  text-gray-200 lg:text-xl  space-y-2">
-              <li>
-                <span className="font-semibold">157 km</span> Lagos-Ibadan
-                standard gauge rail.{" "}
-              </li>
-              <li>
-                <span className="font-semibold">186 km</span>Abuja-Kaduna
-                standard gauge rail line
-              </li>
-              <li>
-                <span className="font-semibold">327 km</span> Itakpe-Warri
-                standard gauge rail. Agbor Railway Village, Abuja Light Rail
-                project
-              </li>
-              <li>
-                <span className="font-semibold">284 km</span> Kano-Maradi
-                Standard Gauge Rail
-              </li>
-            </ul>
-            <img
-              loading="lazy"
-              className="lg:w-[600px] h-[300px] object-cover lg:rounded-lg shadow-lg"
-              src="https://img.freepik.com/free-photo/railroad-track-transportation-speed-sunset-mode-transport-motion-travel-outdoors-generative-ai_188544-8140.jpg?t=st=1708969588~exp=1708973188~hmac=a295b8e8d4a6c84aacf91e5c75dad176b173bacdb32cfe1b80f2dc095291b8f0&w=826"
-              alt=""
-            />
+          <div className="grid px-10 max-w-7xl mx-auto gap-5 grid-cols-1 lg:grid-cols-3">
+            {data.map((item) => (
+              <>
+                <Link key={item.id} to={`/project/${item.id}`}>
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={item.image}
+                      className=" h-72 w-full object-cover rounded-lg brightness-90"
+                      alt=""
+                    />
+
+                    <div className=" absolute   h-[100px] w-full  -bottom-4 z-20 bg-gradient-to-b  from-[#502465] to-[#000000] blur-3xl" />
+                    <h1 className="text-white inset-0 flex items-end hover:bg-black/40  text-xl font-semibold absolute z-50    transition duration-400 rounded-lg p-5">
+                      {item.heading}
+                    </h1>
+                  </div>
+                </Link>
+              </>
+            ))}
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,8 +1,7 @@
 import { useState } from "react";
-
+import logo from "../../assets/logo2.svg";
 import { Link } from "react-router-dom";
 import { Fade as Hamburger } from "hamburger-react";
-
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   // const isMounted = useRef(true);
@@ -11,11 +10,9 @@ const Navbar = () => {
     <div
       className={`lg:flex justify-between  items-center  px-4 md:px-8 lg:px-10 py-4 bg-primary w-full z-50 `}>
       <div className="flex justify-between items-center">
-        <img
-          className="h-12 w-12 rounded-full z-20"
-          src="https://github.com/shadcn.png"
-          alt=""
-        />
+        <Link to={"/"}>
+          <img className="h-12 w-12 rounded-full z-20" src={logo} alt="" />
+        </Link>
         <span
           onClick={() => setOpen(!isOpen)}
           className="block md:hidden bg-black/10 rounded-lg z-20">
@@ -55,6 +52,13 @@ const Navbar = () => {
             className="text-gray-300  hover:text-white text-xl lg:text-lg font-medium  transition-all duration-300 inline-block"
             onClick={() => setOpen(!isOpen)}>
             Contact
+          </a>
+          <a
+            href="/presentation.pdf"
+            download
+            className="text-gray-300  hover:text-white text-xl lg:text-lg font-medium  transition-all duration-300 inline-block cursor-pointer"
+            onClick={() => setOpen(!isOpen)}>
+            Download
           </a>
         </div>
       </div>

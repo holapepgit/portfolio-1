@@ -1,8 +1,5 @@
 import "aos/dist/aos.css";
-import {
-  FaPhone,
-  FaWhatsapp,
-} from "react-icons/fa";
+// import { FaPhone, FaWhatsapp } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
@@ -11,7 +8,7 @@ const Banner = () => {
       <div className="flex  flex-col-reverse justify-evenly lg:flex-row ">
         <div className="lg:w-1/2 lg:pr-8 z-20">
           <div className="pl-2  space-y-2">
-            <h1 className="text-2xl lg:text-5xl font-bold  ">
+            <h1 className="text-2xl lg:text-5xl font-bold lg:mt-10 ">
               Regional Railway Network
             </h1>
             <h1 className="text-3xl lg:text-5xl font-bold   ">
@@ -27,7 +24,9 @@ const Banner = () => {
                 repeat={3}
               />
             </h1>
-            <p className="  k font-semibold lg:text-2xl text-lg">Contact with Us</p>
+            {/* <p className="  k font-semibold lg:text-2xl text-lg">
+              Contact with Us
+            </p> */}
 
             {/* <div className=" lg:space-x-6 space-x-4 flex py-2 items-center">
               <a href="" className="k">
@@ -42,7 +41,6 @@ const Banner = () => {
 
         <div className="flex items-center justify-center w-auto  lg:mt-0 shadow-xl lg:border-4 rounded-md border-secondary  lg:w-[400px] lg:h-[400px] mb-5 lg:mb-0">
           <img
-            loading="lazy"
             className=" max-w-md lg:max-w-none lg:w-[400px] lg:h-[400px] lg:rounded-xl md:rounded-2xl object-cover lg:px-3 bg-gray-800 lg:mr-8 lg:mb-10 lg:-ml-4"
             src="https://i.ibb.co/kG9rpgD/8737a131-4448-44d3-adb8-39e0647fe3c6.jpg"
             alt="Profile"

@@ -4,7 +4,7 @@ import economy from "../src/assets/economy.svg";
 
 const Goals = () => {
   return (
-    <div className="max-w-5xl mx-auto py-14 ">
+    <div className="max-w-5xl mx-auto py-10 ">
       <div className="lg:mx-auto text-center">
         <h2 className="text-3xl font-bold mb-2">Goals</h2>
         <div className="mx-auto w-12 h-1 mb-5 bg-secondary"></div>

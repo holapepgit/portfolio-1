@@ -4,20 +4,21 @@ import Banner from "./Banner";
 import Contact from "./Contact";
 import Gallery from "./Gallery";
 import ProjectOverview from "./ProjectOverview";
-
 import Timeline from "./Timeline";
 
 const Home = () => {
   return (
-    <div className="">
-      <Banner />
-      <AboutMe />
-      <Timeline />
-      <ProjectOverview />
-      <Gallery />
-      <Goals />
-      <Contact />
-    </div>
+    <>
+      <div className="">
+        <Banner />
+        <AboutMe />
+        <Timeline />
+        <ProjectOverview />
+        <Gallery />
+        <Goals />
+        <Contact />
+      </div>
+    </>
   );
 };
 
