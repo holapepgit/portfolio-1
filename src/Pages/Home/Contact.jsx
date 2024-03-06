@@ -8,16 +8,21 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    toast.loading("Sending Message", {
-      duration: 2000,
-    });
+    const toastId = toast.loading("Sending Message");
 
+    console.log(form.current);
     emailjs
-      .sendForm("PRIVATE_KEY", "TEMPLATE_ID", form.current, "PUBLIC_KEY")
+      .sendForm(
+        "service_xmyrcxi",
+        "template_ljybxlb",
+        form.current,
+        "ZqOxtIvGFcz0A-ui8"
+      )
       .then(
         (result) => {
           toast.success("Message Sent Successfully", {
             duration: 2000,
+            id: toastId,
           });
 
           console.log(result.text);
@@ -27,6 +32,7 @@ const Contact = () => {
         (error) => {
           toast.error("Error Sending Message", {
             duration: 2000,
+            id: toastId,
           });
 
           console.log(error.text);

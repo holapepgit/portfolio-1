@@ -17,11 +17,15 @@ const ProjectOverview = () => {
       <div className="flex lg:flex-row flex-col-reverse gap-10 justify-center pb-10 ">
         <table className="text-center h-full  shadow-lg rounded bg-   overflow-hidden">
           <thead>
-            {tableHead.map((head, index) => (
-              <th key={index} className="px-4 py-2 border text-xs lg:text-base">
-                {head}
-              </th>
-            ))}
+            <tr>
+              {tableHead.map((head, index) => (
+                <th
+                  key={index}
+                  className="px-4 py-2 border text-xs lg:text-base">
+                  {head}
+                </th>
+              ))}
+            </tr>
           </thead>
           <tbody>
             {tableData.map((data, index) => (
