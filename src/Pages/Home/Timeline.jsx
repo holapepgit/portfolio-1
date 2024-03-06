@@ -18,7 +18,7 @@ const Timeline = () => {
         </article>
         <article className="timeline-item">
           <p>
-            Since 2022 the needed for a rail system in the two zones has been
+            Since 2022 the need for a rail system in the two zones has been
             constantly talked about in important places including among State
             governors and businessmen. Our group shopped around for a private
             sector investor who could undertake this project. We luckily found
