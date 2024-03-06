@@ -2,12 +2,12 @@ const ProjectOverview = () => {
   return (
     <div className="py-10 space-y-10 px-5">
       <div className="lg:mx-auto text-center">
-        <h2 className="text-3xl font-bold ">Project Overview</h2>
+        <h2 className="text-3xl font-bold pb-1">Project Overview</h2>
         <div className="mx-auto w-48 h-1  bg-secondary"></div>
       </div>
 
       <p className="mx-auto text-center tracking-wider max-w-5xl text-medium text-sm lg:text-base text-gray-700">
-        This project aims to provide detailed geographical and topographical
+        This report aims to provide detailed geographical and topographical
         information for the proposed railway lines connecting key cities in the
         South-South and South-East regions of Nigeria. The survey will map the
         right-of-way (Rof-W) for each proposed route, including stations, for
