@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { Fade as Hamburger } from "hamburger-react";
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
-  // const isMounted = useRef(true);
 
   return (
     <div

@@ -14,8 +14,8 @@ const ProjectOverview = () => {
         land acquisition purposes.
       </p>
 
-      <div className="flex lg:flex-row flex-col-reverse gap-10 justify-center pb-10 ">
-        <table className="text-center h-full  shadow-lg rounded bg-   overflow-hidden">
+      <div className="flex lg:flex-row flex-col-reverse  gap-10 justify-center pb-10 ">
+        <table className="text-center mx-auto h-full  shadow-lg rounded bg-   overflow-hidden">
           <thead>
             <tr>
               {tableHead.map((head, index) => (

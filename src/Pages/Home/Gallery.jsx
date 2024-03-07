@@ -4,6 +4,19 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import video1 from "../../assets/video/1.mp4";
+import video2 from "../../assets/video/2.mp4";
+import video3 from "../../assets/video/3.mp4";
+import video4 from "../../assets/video/4.mp4";
+import video5 from "../../assets/video/5.mp4";
+import video6 from "../../assets/video/6.mp4";
+import video7 from "../../assets/video/7.mp4";
+import video8 from "../../assets/video/8.mp4";
+import video9 from "../../assets/video/9.mp4";
+import video10 from "../../assets/video/10.mp4";
+import video11 from "../../assets/video/11.mp4";
+import video12 from "../../assets/video/12.mp4";
+import video13 from "../../assets/video/13.mp4";
 
 export default function Gallery() {
   return (
@@ -13,6 +26,8 @@ export default function Gallery() {
         <div className="mx-auto w-16 h-1 mb-5 bg-secondary"></div>
       </div>
       <Swiper
+        lazyPreloaderClass={true}
+        lazyPreloadPrevNext={true}
         effect={"coverflow"}
         grabCursor={true}
         navigation={true}
@@ -28,17 +43,13 @@ export default function Gallery() {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="mySwiper">
+        className="mySwiper max-w-6xl mx-auto">
         {youtubeVideosLink.map((item, index) => (
           <SwiperSlide key={index} className="w-72">
             {item.video ? (
-              <iframe
-                width="100%"
-                height="100%"
-                src={item.video}
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen></iframe>
+              <div className="h-full w-full flex justify-center items-center">
+                <video src={item.video} controls className="w-full h-full" />
+              </div>
             ) : (
               <img
                 loading="lazy"
@@ -62,66 +73,75 @@ const youtubeVideosLink = [
     image: "https://i.ibb.co/Snq8NK4/2.png",
   },
   {
-    video: "https://www.youtube.com/embed/E85oM1URCZ0?si=CaIKkuDcd9_W03Nk",
+    video: video1,
   },
   {
     image: "https://i.ibb.co/vZTJhXf/3.png",
   },
   {
-    video: "https://www.youtube.com/embed/8M2tfT6vntA?si=QZtKUD-hyxcdz0Dk",
+    video: video2,
   },
   {
     image: "https://i.ibb.co/dcynVtk/4.png",
   },
   {
-    video: "https://www.youtube.com/embed/Wet4AMgsIu0?si=wunZYKeVjK9Afz3k",
+    video: video3,
   },
   {
     image: "https://i.ibb.co/JrDtt7Z/5.png",
   },
   {
-    video: "https://www.youtube.com/embed/0oTjJBSssII?si=QJd_A1f558yhhcMM",
+    video: video4,
   },
   {
     image: "https://i.ibb.co/jf1091b/6.png",
   },
   {
-    video: "https://www.youtube.com/embed/d9byjTHciUw?si=lxEOXINnw1z2trQG",
+    video: video5,
   },
   {
     image: "https://i.ibb.co/YjXHtq4/7.png",
   },
   {
-    video: "https://www.youtube.com/embed/ZnAUcBM6QxE?si=sdBoJlJR9IQViIEV",
+    video: video6,
   },
   {
     image: "https://i.ibb.co/jwb128r/8.png",
   },
   {
-    video: "https://www.youtube.com/embed/wVoYNXAU958?si=8PFfFNAeAdO1U9es",
+    video: video7,
   },
   {
     image: "https://i.ibb.co/XZKdpbB/9.png",
   },
   {
-    video: "https://www.youtube.com/embed/k45eMdggg_8?si=ySMfraJDzO0XSkzq",
+    video: video8,
   },
   {
     image: "https://i.ibb.co/31qRqTF/10.png",
   },
   {
-    video: "https://www.youtube.com/embed/JouK9kfjzEw?si=JOGzKb-_p65ytDwS",
+    video: video9,
   },
   {
     image: "https://i.ibb.co/5nCvSGP/11.png",
   },
   {
-    video: "https://www.youtube.com/embed/GJFreVM-ihQ?si=RRP1wrvCecFWeD2p",
+    video: video10,
   },
   {
     image: "https://i.ibb.co/dBF9P88/12.png",
   },
   {
+    video: video11,
+  },
+  {
     image: "https://i.ibb.co/1K9wjsX/13.png",
+  },
+  {
+    video: video12,
+  },
+  {
+    video: video13,
   },
 ];
