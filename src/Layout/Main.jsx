@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-
 import { Helmet } from "react-helmet";
 import Footer from "../Pages/Shared/Footer";
 import Navbar from "../Pages/Shared/Navbar";
