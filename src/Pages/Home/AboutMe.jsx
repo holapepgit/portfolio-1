@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import banner from "../../assets/banner.jpg";
 const AboutMe = () => {
   return (
@@ -33,11 +34,11 @@ const AboutMe = () => {
                 million tons of cargo each year.
               </li>
 
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="w-fit inline-block px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-gray-600 rounded-lg lg:w-auto hover:bg-gray-500 focus:outline-none focus:bg-gray-500">
                 Connect With Us
-              </a>
+              </Link>
             </ul>
           </div>
         </div>
