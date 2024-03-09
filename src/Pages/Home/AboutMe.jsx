@@ -1,3 +1,4 @@
+import banner from "../../assets/banner.jpg";
 const AboutMe = () => {
   return (
     <>
@@ -10,7 +11,7 @@ const AboutMe = () => {
           <div className="flex items-center justify-center w-full mt-6 lg:mt-0   lg:border-4 lg:border-black/70  rounded lg:w-[300px] lg:h-[400px]">
             <img
               className="w-[300px] h-[400px] object-cover lg:max-w-3xl rounded-lg lg:px-3 bg-gray-800  border-red-500 lg:mb-14 lg:ml-14"
-              src="https://i.ibb.co/Zg6dPVw/35184ba2-bfac-45c9-9ce3-e67191ef54d7.jpg"
+              src={banner}
               alt="Catalogue-pana.svg"
             />
           </div>

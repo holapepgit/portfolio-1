@@ -1,3 +1,4 @@
+import map from "../../assets/map.png";
 const ProjectOverview = () => {
   return (
     <div className="py-10 space-y-10 px-5">
@@ -41,7 +42,7 @@ const ProjectOverview = () => {
 
         <img
           loading="lazy"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/No_colonies_blank_world_map.png/800px-No_colonies_blank_world_map.png"
+          src={map}
           alt="maps"
           className="lg:w-[600px] lg:h-[600px] object-cover"
         />
