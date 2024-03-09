@@ -6,15 +6,18 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 const ProjectDetails = () => {
   const [data, setData] = useState([]);
-
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
+    setLoading(true);
     const fetchData = async () => {
       try {
         const response = await fetch("/project.json");
         const jsonData = await response.json();
         setData(jsonData);
+        setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
+        setLoading(false);
       }
     };
 
@@ -72,24 +75,30 @@ const ProjectDetails = () => {
             </h2>
             <div className="mx-auto w-44 h-1 mb-5 bg-secondary"></div>
           </div>
-          <div className="grid px-10 max-w-7xl mx-auto gap-5 grid-cols-1 lg:grid-cols-3">
-            {data.map((item, index) => (
-              <Link key={index} to={`/project/${item.id}`}>
-                <div className="relative overflow-hidden">
-                  <img
-                    src={item.image}
-                    className="h-72 w-full object-cover rounded-lg brightness-90"
-                    alt=""
-                  />
+          {loading ? (
+            <div className="flex items-center justify-center">
+              <h1 className="w-10 h-10 rounded-full border-4 border-dashed animate-spin"></h1>
+            </div>
+          ) : (
+            <div className="grid px-10 max-w-7xl mx-auto gap-5 grid-cols-1 lg:grid-cols-3">
+              {data.map((item, index) => (
+                <Link key={index} to={`/project/${item.id}`}>
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={item.image}
+                      className="h-72 w-full object-cover rounded-lg brightness-90"
+                      alt=""
+                    />
 
-                  <div className="absolute h-[100px] w-full -bottom-4 z-20 bg-gradient-to-b from-[#502465] to-[#000000] blur-3xl" />
-                  <h1 className="text-white inset-0 flex items-end hover:bg-black/40 text-xl font-semibold absolute z-50 transition duration-400 rounded-lg p-5">
-                    {item.heading}
-                  </h1>
-                </div>
-              </Link>
-            ))}
-          </div>
+                    <div className="absolute h-[100px] w-full -bottom-4 z-20 bg-gradient-to-b from-[#502465] to-[#000000] blur-3xl" />
+                    <h1 className="text-white inset-0 flex items-end hover:bg-black/40 text-xl font-semibold absolute z-50 transition duration-400 rounded-lg p-5">
+                      {item.heading}
+                    </h1>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </>
