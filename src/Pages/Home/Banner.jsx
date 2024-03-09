@@ -1,5 +1,3 @@
-import "aos/dist/aos.css";
-// import { FaPhone, FaWhatsapp } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 
 const Banner = () => {
@@ -24,24 +22,12 @@ const Banner = () => {
                 repeat={3}
               />
             </h1>
-            {/* <p className="  k font-semibold lg:text-2xl text-lg">
-              Contact with Us
-            </p> */}
-
-            {/* <div className=" lg:space-x-6 space-x-4 flex py-2 items-center">
-              <a href="" className="k">
-                <FaWhatsapp className="text-4xl"/>
-              </a>
-              <a href="" className="k">
-                <FaPhone  className="rotate-90 text-2xl"/>
-              </a>
-            </div> */}
           </div>
         </div>
 
         <div className="flex items-center justify-center w-auto  lg:mt-0 shadow-xl lg:border-4 rounded-md border-secondary  lg:w-[400px] lg:h-[400px] mb-5 lg:mb-0">
           <img
-            className=" max-w-md lg:max-w-none lg:w-[400px] lg:h-[400px] lg:rounded-xl md:rounded-2xl object-cover lg:px-3 bg-gray-800 lg:mr-8 lg:mb-10 lg:-ml-4"
+            className=" max-w-md lg:max-w-none w-full h-full lg:rounded-xl md:rounded-2xl object-cover lg:px-3 bg-gray-800 lg:mr-8 lg:mb-10 lg:-ml-4"
             src="https://i.ibb.co/kG9rpgD/8737a131-4448-44d3-adb8-39e0647fe3c6.jpg"
             alt="Profile"
           />
