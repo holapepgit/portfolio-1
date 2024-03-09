@@ -3,7 +3,8 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+
+import { Pagination, Navigation } from "swiper/modules";
 import video1 from "../../assets/video/1.mp4";
 import video2 from "../../assets/video/2.mp4";
 import video3 from "../../assets/video/3.mp4";
@@ -20,52 +21,46 @@ import video13 from "../../assets/video/13.mp4";
 
 export default function Gallery() {
   return (
-    <div className="py-5 bg-primary">
-      <div className="lg:mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-2 text-white">Gallery</h2>
-        <div className="mx-auto w-16 h-1 mb-5 bg-secondary"></div>
+    <>
+      <div className="py-5  bg-primary">
+        <div className="lg:mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-2 text-white">Gallery</h2>
+          <div className="mx-auto w-16 h-1 mb-5 bg-secondary"></div>
+        </div>
+
+        <Swiper
+          style={{
+            "--swiper-navigation-color": "#ff083d",
+            "--swiper-pagination-color": "#ff083d",
+          }}
+          lazy={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper max-w-6xl mx-auto">
+          {data.map((item) => (
+            <>
+              {item.image ? (
+                <SwiperSlide>
+                  <img src={item.image} loading="lazy" />
+                  <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </SwiperSlide>
+              ) : (
+                <SwiperSlide>
+                  <video src={item.video} className="w-full h-full" controls />
+                </SwiperSlide>
+              )}
+            </>
+          ))}
+        </Swiper>
       </div>
-      <Swiper
-        lazyPreloaderClass={true}
-        lazyPreloadPrevNext={true}
-        effect={"coverflow"}
-        grabCursor={true}
-        navigation={true}
-        centeredSlides={true}
-        initialSlide={1}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className="mySwiper max-w-6xl mx-auto">
-        {youtubeVideosLink.map((item, index) => (
-          <SwiperSlide key={index} className="w-72">
-            {item.video ? (
-              <div className="h-full w-full flex justify-center items-center">
-                <video src={item.video} controls className="w-full h-full" />
-              </div>
-            ) : (
-              <img
-                loading="lazy"
-                src={item.image}
-                alt="gallery"
-                className="w-full h-full object-cover object-left"
-              />
-            )}
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+    </>
   );
 }
 
-const youtubeVideosLink = [
+const data = [
   {
     image: "https://i.ibb.co/ySLLJcr/1.png",
   },
