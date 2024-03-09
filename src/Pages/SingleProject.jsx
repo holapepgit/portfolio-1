@@ -19,13 +19,11 @@ const SingleProject = () => {
       });
   }, [currentId?.id]);
 
-  console.log(data);
-
   return (
-    <div className="bg-primary pt-3">
+    <div className="bg-primary pt-3 min-h-screen">
       <ScrollRestoration />
       <div className="lg:mx-auto text-white text-center relative">
-        <h2 className="text-3xl font-bold mb-2">{data.heading}</h2>
+        <h2 className="lg:text-3xl text-lg font-bold mb-2">{data.heading}</h2>
         <div className="mx-auto w-44 h-1 mb-5 bg-secondary"></div>
         <Link
           to={"/projects"}

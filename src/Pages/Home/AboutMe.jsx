@@ -10,7 +10,7 @@ const AboutMe = () => {
         <div className="items-center lg:flex justify-evenly">
           <div className="flex items-center justify-center w-full mt-6 lg:mt-0   lg:border-4 lg:border-black/70  rounded lg:w-[300px] lg:h-[400px]">
             <img
-              className="w-[300px] h-[400px] object-cover lg:max-w-3xl rounded-lg lg:px-3 bg-gray-800  border-red-500 lg:mb-14 lg:ml-14"
+              className="w-[350px] h-[400px] object-cover lg:max-w-3xl rounded-lg lg:px-3 bg-gray-800  border-red-500 lg:mb-14 lg:ml-14"
               src={banner}
               alt="Catalogue-pana.svg"
             />

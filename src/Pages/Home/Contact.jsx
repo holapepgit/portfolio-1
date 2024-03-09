@@ -10,7 +10,6 @@ const Contact = () => {
 
     const toastId = toast.loading("Sending Message");
 
-    console.log(form.current);
     emailjs
       .sendForm(
         "service_xmyrcxi",
@@ -19,23 +18,19 @@ const Contact = () => {
         "ZqOxtIvGFcz0A-ui8"
       )
       .then(
-        (result) => {
+        () => {
           toast.success("Message Sent Successfully", {
             duration: 2000,
             id: toastId,
           });
 
-          console.log(result.text);
-
           form.current.reset();
         },
-        (error) => {
+        () => {
           toast.error("Error Sending Message", {
             duration: 2000,
             id: toastId,
           });
-
-          console.log(error.text);
         }
       );
   };
