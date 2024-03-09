@@ -5,10 +5,13 @@ import { RouterProvider } from "react-router-dom";
 import { Toaster } from "sonner";
 import "./styles/global.css";
 import { router } from "./routes/router";
+import { StrictMode } from "react";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
-    <RouterProvider router={router} />
-    <Toaster />
+    <StrictMode>
+      <RouterProvider router={router} />
+      <Toaster />
+    </StrictMode>
   </>
 );

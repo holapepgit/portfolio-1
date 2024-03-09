@@ -33,26 +33,33 @@ export default function Gallery() {
             "--swiper-navigation-color": "#ff083d",
             "--swiper-pagination-color": "#ff083d",
           }}
-          lazy={true}
+          lazy={"true"}
           pagination={{
             clickable: true,
           }}
           navigation={true}
           modules={[Pagination, Navigation]}
           className="mySwiper max-w-6xl mx-auto">
-          {data.map((item) => (
-            <>
+          {data.map((item, index) => (
+            <div key={index}>
               {item.image ? (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <img src={item.image} loading="lazy" />
                   <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </SwiperSlide>
               ) : (
-                <SwiperSlide>
-                  <video src={item.video} className="w-full h-full" controls />
+                <SwiperSlide
+                  key={index}
+                  className="flex items-center justify-center">
+                  <video
+                    controlsList="nodownload"
+                    src={item.video}
+                    className="w-full h-full"
+                    controls
+                  />
                 </SwiperSlide>
               )}
-            </>
+            </div>
           ))}
         </Swiper>
       </div>
