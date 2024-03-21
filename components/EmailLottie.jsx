@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import animationData from "../public/email.json";
+import animationData from "../src/assets/email.json";
 
 const EmailLottie = () => {
   return (
