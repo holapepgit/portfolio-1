@@ -9,11 +9,11 @@ export const tableData = [
   },
   {
     title: "Potential Source (s) of Funding",
-    details: "",
+    details: "Private Sector Equity Investor",
   },
   {
     title: "Expected Commencement date",
-    details: "",
+    details: "June 2024",
   },
   {
     title: "Expected Duration",
