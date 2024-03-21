@@ -4,6 +4,7 @@ import { tableData } from "../../constant/tableData";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useMemo } from "react";
 const ProjectDetails = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -23,6 +24,9 @@ const ProjectDetails = () => {
 
     fetchData();
   }, []);
+
+  const memoizedTableData = useMemo(() => tableData, []);
+
   return (
     <>
       <div className="bg-primary ">
@@ -51,7 +55,7 @@ const ProjectDetails = () => {
               </tr>
             </thead>
             <tbody>
-              {tableData.map((data, index) => (
+              {memoizedTableData.map((data, index) => (
                 <tr key={index} className="text-gray-300 text-sm lg:text-base ">
                   <td className="px-4 py-2 ">{data.title}</td>
                   <td className="px-4 py-2">{data.details}</td>

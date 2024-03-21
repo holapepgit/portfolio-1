@@ -39,7 +39,7 @@ const Navbar = () => {
             </Link>
           ))}
           <a
-            href="/presentation.pdf"
+            href="/presentation.pptx"
             download
             className="text-gray-300  hover:text-white text-xl lg:text-lg font-medium  transition-all duration-300 inline-block cursor-pointer"
             onClick={() => setOpen(!isOpen)}>
